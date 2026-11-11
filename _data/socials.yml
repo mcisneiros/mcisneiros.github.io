@@ -1,0 +1,9 @@
+# Contact links shown at the bottom of the About page.
+# Docs: https://github.com/george-gca/jekyll-socials
+github_username: mcisneiros
+# TODO: uncomment and fill in the ones you want to show (no phone number or birth date).
+# email: TODO                 # INESC-ID email address
+# linkedin_username: TODO     # the part after linkedin.com/in/
+# orcid_id: TODO              # e.g. 0000-0000-0000-0000
+# scholar_userid: TODO        # Google Scholar profile id
+rss_icon: false

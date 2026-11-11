@@ -1,0 +1,128 @@
+cv:
+  name: Miguel Cisneiros
+  label: Bioinformatician and research data steward
+  location: Lisbon, Portugal
+  image: ""
+  summary: Bioinformatician and research data steward, Lisbon, Portugal.
+
+  social_networks:
+    - network: GitHub
+      username: mcisneiros
+
+  sections:
+    Experience:
+      - company: INESC-ID / Instituto Superior Técnico, Universidade de Lisboa
+        position: Pre-doctoral Researcher
+        location: Lisbon, Portugal
+        end_date: present
+        summary: Machine Learning and Knowledge Discovery (MLKD) group. Working on the MALDIBANK Horizon Europe project (MALDI-TOF MS data and AI methods).
+
+      - company: BioData.pt, ELIXIR Portugal
+        position: Data Steward, Bioinformatics Technician
+        start_date: 2024-07
+        end_date: 2025-12
+        summary: FAIR principles and GDPR compliance, SOP development, technical writing for project documents, metadata curation and data standards.
+      - company: BioData.pt, ELIXIR Portugal
+        position: Collaborator, FEGA Portugal
+        start_date: 2025-03
+        end_date: present
+        summary: Data Steward of Sensitive Data, Helpdesk Officer, SOP writing.
+
+      - company: ITQB/NOVA
+        position: Research Fellow, PHENET
+        start_date: 2024-07
+        end_date: 2025-03
+        summary: Design and curation of soil ontologies to improve semantic integration of environmental datasets. Supervisor Inês Chaves.
+      - company: Gulbenkian Science Institute (IGC), PCG Research Group
+        position: MSc Thesis
+        start_date: 2022-11
+        end_date: 2024-11
+        summary: '"Comparative demography of endangered species using genomic data". Supervisor Lounès Chikhi. Grade 18/20.'
+      - company: KU Leuven, Belgium
+        position: BSc Curricular Internship (Erasmus+)
+        start_date: 2021-02
+        end_date: 2021-07
+        summary: '"Development of In silico Strategies To Advance the 3Rs in Toxicity Testing". Supervisors Vera van Noort and Diksha Bhalla. Grade 19/20.'
+
+    Education:
+      - institution: Faculty of Sciences, University of Lisbon (FCUL)
+        location: Lisbon, Portugal
+        area: Evo-Devo Biology
+        studyType: MSc
+        start_date: 2021
+        end_date: 2024
+        score: 16/20
+      - institution: Barreiro School of Technology, Polytechnic of Setúbal
+        location: Setúbal, Portugal
+        area: Bioinformatics
+        studyType: BSc
+        start_date: 2018
+        end_date: 2021
+        score: 16/20
+
+    Skills:
+      - name: Programming
+        icon: fa-solid fa-code
+        keywords: "Python (NumPy, Pandas, Matplotlib, Scikit-learn), Bash, git, R, SQL"
+      - name: Areas
+        icon: fa-solid fa-dna
+        keywords: "FAIR data, GDPR, ELSI, ESG, metadata and ontologies"
+
+    Languages:
+      - name: Portuguese
+        summary: "Native"
+      - name: English
+        summary: "C1"
+      - name: French
+        summary: "B1"
+      - name: Dutch
+        summary: "A1"
+
+    Certificates:
+      - name: BioHackathon Germany 2024
+        date: 2024-12
+        issuer: ELIXIR Germany / de.NBI, Kassel. LLMs, ontology mapping, Bioschemas/RO-Crates.
+        icon: fa-solid fa-tag
+      - name: PHENET Data Management Training
+        date: 2024-12
+        issuer: INRAE, Paris. Metadata management, FAIR, repository submission, cloud workflows.
+        icon: fa-solid fa-tag
+      - name: XIII Bioinformatics Open Days
+        date: 2024-03
+        issuer: NEBIUM, UMinho, Braga.
+        icon: fa-solid fa-tag
+      - name: XIX ENBE, National Meeting of Evolutionary Biology
+        date: 2023-12
+        issuer: 'Lisbon. Poster "Comparative demography of endangered species using genomic data".'
+        icon: fa-solid fa-tag
+      - name: TULIP Summer School 2023
+        date: 2023-07
+        issuer: LabEx TULIP, Toulouse. Project on the genetic basis of color and patterns in plants and animals.
+        icon: fa-solid fa-tag
+      - name: 13th International Course on Developmental Biology
+        date: 2022-09
+        issuer: Sorbonne Université / Institut Curie, Paris.
+        icon: fa-solid fa-tag
+      - name: Organizing Committee, IPS Bioinformatics Days
+        date: 2021-01
+        issuer: Polytechnic of Setúbal (2020-2021).
+        icon: fa-solid fa-tag
+
+    Volunteer:
+      - company: Fulbright Commission Portugal, U.S. Department of State, University of South Carolina
+        position: Fulbrighter, SUSI for Student Leaders on Civic Engagement
+        start_date: 2021
+        end_date: 2022
+        summary: Participated in 2021 and 2022.
+      - company: Polytechnic of Setúbal
+        position: Two-term student representative, BSc in Bioinformatics
+        start_date: 2019
+        end_date: 2021
+      - company: Fulbright Commission Portugal
+        position: Moderator, debate "LGBTQI+ Inclusion in Higher Education"
+        start_date: 2020-06
+        end_date: 2020-06
+      - company: Austrian Presidency of the Council of the EU, Vienna
+        position: Participant, "Gender Equality & You" conference
+        start_date: 2018-10
+        end_date: 2018-10
