@@ -41,16 +41,17 @@ html[data-theme="dark"] .theme-btn .fa-moon { display: none; }
 @media (max-width: 991.98px) { .site-nav.scrolled, .site-nav.menu-open { background: var(--nav-bg); } .site-nav .navbar-collapse { padding: .5rem 0 .8rem; } }
 
 /* Hero: a light and a dark version that crossfade when the theme changes */
-.hero { position: relative; isolation: isolate; min-height: 100vh; display: flex; align-items: center; text-align: center; color: var(--hero-fg); padding: 7rem 0 8rem; background: var(--bg); transition: background-color .45s ease; }
+.hero { position: relative; isolation: isolate; min-height: 100vh; display: flex; align-items: center; text-align: center; color: var(--hero-fg); padding: 7rem 0 8rem; background: #c9defe; transition: background-color .45s ease; }
+html[data-theme="dark"] .hero { background: #060f26; }
 .hero-art { position: absolute; inset: 0; z-index: -2; pointer-events: none; transition: opacity .45s ease; will-change: opacity; }
 .hero-art i { position: absolute; top: 0; bottom: 0; background-repeat: no-repeat; background-size: auto 100%; }
 .hero-art .l { left: 0; width: 62%; background-position: left center; }
 .hero-art .h { right: 0; width: 68%; background-position: right center; }
 .hero-art .s { left: 0; right: 0; }
-.hero-art-light { opacity: 1; background: radial-gradient(ellipse 55% 50% at 85% 30%, rgba(70,150,255,.22), transparent 100%), radial-gradient(ellipse 40% 45% at 6% 40%, rgba(70,150,255,.14), transparent 100%); }
+.hero-art-light { opacity: 1; background: radial-gradient(ellipse 55% 50% at 85% 30%, rgba(60,140,255,.34), transparent 100%), radial-gradient(ellipse 40% 45% at 6% 40%, rgba(60,140,255,.26), transparent 100%), linear-gradient(160deg, #c3dbff 0%, #d6e6ff 50%, #bcd6ff 100%); }
 .hero-art-light .l { background-image: url("../img/hero-letters-light.svg"); }
 .hero-art-light .h { background-image: url("../img/hero-helix-light.svg"); }
-.hero-art-light .s { background: radial-gradient(ellipse 52% 48% at 50% 54%, rgba(255,255,255,.93), rgba(255,255,255,.6) 55%, transparent 100%); }
+.hero-art-light .s { background: radial-gradient(ellipse 52% 48% at 50% 54%, rgba(226,238,255,.9), rgba(226,238,255,.55) 55%, transparent 100%); }
 .hero-art-dark { opacity: .01; background: radial-gradient(ellipse 55% 50% at 85% 30%, rgba(30,100,220,.38), transparent 100%), radial-gradient(ellipse 40% 45% at 6% 40%, rgba(30,100,220,.22), transparent 100%); }
 .hero-art-dark .l { background-image: url("../img/hero-letters-dark.svg"); }
 .hero-art-dark .h { background-image: url("../img/hero-helix-dark.svg"); }
