@@ -71,11 +71,13 @@ html[data-theme="dark"] .hero-art-dark { opacity: 1; }
 .social img { width: 1.5rem; height: 1.5rem; }
 html:not([data-theme="dark"]) .social img { filter: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(2200%) hue-rotate(205deg) brightness(95%); }
 html:not([data-theme="dark"]) .social a:hover img { filter: brightness(0) invert(1); }
+.social-break { display: none; }
 .scroll-hint { display: inline-block; margin-top: 2.5rem; color: var(--accent); font-size: 1.6rem; text-decoration: none; }
-@media (max-width: 575.98px) { .hero { padding-top: 6rem; } .hero .avatar { width: 140px; height: 140px; } .social a { width: 2.8rem; height: 2.8rem; font-size: 1.2rem; } .hero-art .l, .hero-art .h { opacity: .5; width: 100%; } }
+@media (max-width: 575.98px) { .social-break { display: block; flex-basis: 100%; height: 0; } .social { gap: .8rem .7rem; } .big { font-size: 1.9rem; margin-bottom: 1.6rem; } .lead { font-size: 1.05rem; } .item h3, .card-p h3 { font-size: 1.25rem; } .hero { padding-top: 6rem; } .hero .avatar { width: 140px; height: 140px; } .social a { width: 2.8rem; height: 2.8rem; font-size: 1.2rem; } .hero-art .l, .hero-art .h { opacity: .5; width: 100%; } }
 
 /* Sections */
 .sec { padding: 6rem 0; }
+.lead { font-weight: 400; font-size: 1.2rem; }
 .sec.alt { background: var(--band); }
 .big { font-weight: 700; text-transform: none; font-size: clamp(2.3rem, 5.5vw, 3.8rem); line-height: 1.05; letter-spacing: -.01em; margin-bottom: 2.5rem; }
 .item { display: grid; grid-template-columns: 180px 1fr; gap: 1rem 2rem; padding: 1.6rem 0; border-top: 1px solid var(--line); }
