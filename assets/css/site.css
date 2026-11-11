@@ -4,6 +4,7 @@
   --accent: #1d6fe0; --link: #1d6fe0;
   --nav-fg: #0b1f4d; --nav-bg: rgba(255,255,255,.96); --nav-shadow: 0 2px 14px rgba(20,33,61,.12);
   --icon-bg: rgba(29,111,224,.12); --icon-fg: #1d6fe0; --icon-hover-fg: #fff;
+  --hero-fg: #0b1f4d; --hero-sub: #34497a; --hero-accent: #1560c8; --avatar-ring: rgba(21,96,200,.4); --avatar-glow: rgba(21,96,200,.35);
   --toggler-filter: none;
 }
 html[data-theme="dark"] {
@@ -12,6 +13,7 @@ html[data-theme="dark"] {
   
   --nav-fg: rgba(255,255,255,.9); --nav-bg: rgba(3,11,31,.96); --nav-shadow: 0 2px 18px rgba(0,0,0,.4);
   --icon-bg: rgba(124,196,255,.16); --icon-fg: #ffffff; --icon-hover-fg: #fff;
+  --hero-fg: #ffffff; --hero-sub: #cfe3ff; --hero-accent: #7cc4ff; --avatar-ring: rgba(124,196,255,.4); --avatar-glow: rgba(29,111,224,.7);
   --toggler-filter: invert(1);
 }
 html { scroll-behavior: smooth; scroll-padding-top: 64px; }
@@ -21,7 +23,6 @@ a { color: var(--link); }
 
 /* Navbar: brand hidden at the top so the name is not repeated above the hero */
 .site-nav { background: transparent; transition: background .25s, box-shadow .25s; padding: .7rem 0; }
-.site-nav:not(.scrolled):not(.menu-open) { --nav-fg: rgba(255,255,255,.92); --toggler-filter: invert(1); --line: rgba(255,255,255,.35); --accent: #7cc4ff; }
 .site-nav.scrolled, .site-nav.menu-open { background: var(--nav-bg); box-shadow: var(--nav-shadow); }
 .site-nav .navbar-brand { font-family: "Saira Extra Condensed", sans-serif; font-weight: 700; font-size: 1.6rem; letter-spacing: .04em; color: var(--nav-fg); text-transform: uppercase; opacity: 0; pointer-events: none; transition: opacity .25s; }
 .site-nav.scrolled .navbar-brand { opacity: 1; pointer-events: auto; }
@@ -36,15 +37,23 @@ html[data-theme="dark"] .theme-btn .fa-sun { display: inline-block; }
 html[data-theme="dark"] .theme-btn .fa-moon { display: none; }
 @media (max-width: 991.98px) { .site-nav.scrolled, .site-nav.menu-open { background: var(--nav-bg); } .site-nav .navbar-collapse { padding: .5rem 0 .8rem; } }
 
-/* Hero: always dark (same banner in both themes) so contrast never depends on the theme; fades into the page below */
-.hero { --hero-fg: #fff; --hero-sub: #cfe3ff; --hero-accent: #7cc4ff; --avatar-ring: rgba(124,196,255,.4); --avatar-glow: rgba(29,111,224,.7);
-  --icon-bg: rgba(124,196,255,.16); --icon-fg: #fff; --accent: #7cc4ff; --scrim: rgba(6,15,38,.7);
-  position: relative; isolation: isolate; min-height: 100vh; display: flex; align-items: center; text-align: center; color: var(--hero-fg); padding: 7rem 0 8rem;
-  background: radial-gradient(ellipse 55% 50% at 85% 30%, rgba(30,100,220,.38), transparent 100%), radial-gradient(ellipse 40% 45% at 6% 40%, rgba(30,100,220,.22), transparent 100%), #060f26; }
-.hero::before, .hero::after { content: ""; position: absolute; top: 0; bottom: 0; z-index: -2; background-repeat: no-repeat; background-size: auto 100%; }
-.hero::before { left: 0; width: 62%; background-image: url("../img/hero-letters-dark.svg"); background-position: left center; }
-.hero::after { right: 0; width: 68%; background-image: url("../img/hero-helix-dark.svg"); background-position: right center; }
-.hero-scrim { position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse 48% 46% at 50% 54%, var(--scrim), transparent 100%); }
+/* Hero: a light and a dark version that crossfade when the theme changes */
+.hero { position: relative; isolation: isolate; min-height: 100vh; display: flex; align-items: center; text-align: center; color: var(--hero-fg); padding: 7rem 0 8rem; background: var(--bg); transition: background-color .45s ease; }
+.hero-art { position: absolute; inset: 0; z-index: -2; pointer-events: none; transition: opacity .45s ease; }
+.hero-art i { position: absolute; top: 0; bottom: 0; background-repeat: no-repeat; background-size: auto 100%; }
+.hero-art .l { left: 0; width: 62%; background-position: left center; }
+.hero-art .h { right: 0; width: 68%; background-position: right center; }
+.hero-art .s { left: 0; right: 0; }
+.hero-art-light { opacity: 1; background: radial-gradient(ellipse 55% 50% at 85% 30%, rgba(70,150,255,.22), transparent 100%), radial-gradient(ellipse 40% 45% at 6% 40%, rgba(70,150,255,.14), transparent 100%); }
+.hero-art-light .l { background-image: url("../img/hero-letters-light.svg"); }
+.hero-art-light .h { background-image: url("../img/hero-helix-light.svg"); }
+.hero-art-light .s { background: radial-gradient(ellipse 52% 48% at 50% 54%, rgba(255,255,255,.93), rgba(255,255,255,.6) 55%, transparent 100%); }
+.hero-art-dark { opacity: 0; background: radial-gradient(ellipse 55% 50% at 85% 30%, rgba(30,100,220,.38), transparent 100%), radial-gradient(ellipse 40% 45% at 6% 40%, rgba(30,100,220,.22), transparent 100%); }
+.hero-art-dark .l { background-image: url("../img/hero-letters-dark.svg"); }
+.hero-art-dark .h { background-image: url("../img/hero-helix-dark.svg"); }
+.hero-art-dark .s { background: radial-gradient(ellipse 48% 46% at 50% 54%, rgba(6,15,38,.7), transparent 100%); }
+html[data-theme="dark"] .hero-art-light { opacity: 0; }
+html[data-theme="dark"] .hero-art-dark { opacity: 1; }
 .hero-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 26%; z-index: -1; background-color: var(--bg);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.12) 30%, rgba(0,0,0,.5) 62%, #000 100%); mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.12) 30%, rgba(0,0,0,.5) 62%, #000 100%); }
 .hero .avatar { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 6px solid var(--avatar-ring); box-shadow: 0 0 32px var(--avatar-glow); }
@@ -56,10 +65,10 @@ html[data-theme="dark"] .theme-btn .fa-moon { display: none; }
 .social a { width: 3.1rem; height: 3.1rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: var(--icon-bg); color: var(--icon-fg); font-size: 1.35rem; text-decoration: none; transition: background .2s, color .2s, transform .2s; }
 .social a:hover { background: var(--accent); color: var(--icon-hover-fg); transform: translateY(-3px); }
 .social img { width: 1.5rem; height: 1.5rem; }
-html:not([data-theme="dark"]) .contact .social img { filter: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(2200%) hue-rotate(205deg) brightness(95%); }
-html:not([data-theme="dark"]) .contact .social a:hover img { filter: brightness(0) invert(1); }
+html:not([data-theme="dark"]) .social img { filter: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(2200%) hue-rotate(205deg) brightness(95%); }
+html:not([data-theme="dark"]) .social a:hover img { filter: brightness(0) invert(1); }
 .scroll-hint { display: inline-block; margin-top: 2.5rem; color: var(--accent); font-size: 1.6rem; text-decoration: none; }
-@media (max-width: 575.98px) { .hero { padding-top: 6rem; } .hero .avatar { width: 140px; height: 140px; } .social a { width: 2.8rem; height: 2.8rem; font-size: 1.2rem; } .hero::before, .hero::after { opacity: .6; width: 100%; } }
+@media (max-width: 575.98px) { .hero { padding-top: 6rem; } .hero .avatar { width: 140px; height: 140px; } .social a { width: 2.8rem; height: 2.8rem; font-size: 1.2rem; } .hero-art .l, .hero-art .h { opacity: .5; width: 100%; } }
 
 /* Sections */
 .sec { padding: 6rem 0; }
