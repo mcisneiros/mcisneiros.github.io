@@ -24,7 +24,7 @@ a { color: var(--link); }
 /* Navbar: brand hidden at the top so the name is not repeated above the hero */
 .site-nav { background: transparent; transition: background .25s, box-shadow .25s; padding: .7rem 0; }
 .site-nav.scrolled, .site-nav.menu-open { background: var(--nav-bg); box-shadow: var(--nav-shadow); }
-.site-nav .navbar-brand { font-family: "League Spartan", "Saira Extra Condensed", sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: .02em; color: var(--nav-fg); text-transform: uppercase; opacity: 0; pointer-events: none; transition: opacity .25s; }
+.site-nav .navbar-brand { font-family: "League Spartan", "Saira Extra Condensed", sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: 0; color: var(--nav-fg); text-transform: none; opacity: 0; pointer-events: none; transition: opacity .25s; }
 .site-nav.scrolled .navbar-brand { opacity: 1; pointer-events: auto; }
 .site-nav .nav-link { color: var(--nav-fg); text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; font-weight: 800; }
 .site-nav .nav-link { position: relative; transition: color .3s ease; }
@@ -60,9 +60,9 @@ html[data-theme="dark"] .hero-art-dark { opacity: 1; }
 .hero-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 26%; z-index: -1; background-color: var(--bg);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.12) 30%, rgba(0,0,0,.5) 62%, #000 100%); mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.12) 30%, rgba(0,0,0,.5) 62%, #000 100%); }
 .hero .avatar { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 6px solid var(--avatar-ring); box-shadow: 0 0 32px var(--avatar-glow); }
-.hero h1 { font-family: "League Spartan", "Saira Extra Condensed", sans-serif; font-weight: 700; font-size: clamp(2.6rem, 7.5vw, 5.6rem); letter-spacing: -.01em; text-transform: uppercase; line-height: 1; margin: 1.4rem 0 .6rem; }
+.hero h1 { font-family: "League Spartan", "Saira Extra Condensed", sans-serif; font-weight: 700; font-size: clamp(2.6rem, 7.5vw, 5.6rem); letter-spacing: -.01em; text-transform: none; line-height: 1.05; margin: 1.4rem 0 .6rem; }
 .hero h1 span { color: var(--hero-accent); }
-.hero .role { font-family: "Saira Extra Condensed", sans-serif; font-size: clamp(1.3rem, 3vw, 2rem); letter-spacing: .06em; text-transform: uppercase; color: var(--hero-fg); }
+.hero .role { font-family: "League Spartan", sans-serif; font-weight: 600; font-size: clamp(1.2rem, 2.6vw, 1.8rem); letter-spacing: .01em; text-transform: none; color: var(--hero-fg); }
 .hero .where { color: var(--hero-sub); }
 .social { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; margin-top: 1.8rem; }
 .social a { width: 3.1rem; height: 3.1rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: var(--icon-bg); color: var(--icon-fg); font-size: 1.35rem; text-decoration: none; transition: background .2s, color .2s, transform .2s; }
