@@ -6,10 +6,9 @@ title: Miguel Cisneiros # the website title (if blank, full name will be used in
 first_name: Miguel
 middle_name:
 last_name: Cisneiros
-contact_note: >
-  The best way to reach me is through GitHub or my institutional contacts.
+contact_note: # TODO (optional): a short note about the best way to contact you
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Bioinformatician and research data steward based in Lisbon, Portugal.
+  Pre-doctoral researcher at INESC-ID / Instituto Superior Técnico (University of Lisbon), working on AI for MALDI-TOF mass spectrometry. Background in bioinformatics, FAIR data and research data management.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -109,9 +108,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: # TODO: add a preview image (e.g. /assets/img/og-preview.png, about 1200x630) for social sharing
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
