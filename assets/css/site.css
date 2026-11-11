@@ -1,3 +1,10 @@
+/* Self-hosted fonts (SIL OFL): League Spartan for headings, Mulish for text */
+@font-face { font-family: "League Spartan"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/league-spartan-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "League Spartan"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/league-spartan-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Mulish"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/mulish-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Mulish"; font-style: normal; font-weight: 800; font-display: swap; src: url("../fonts/mulish-latin-800-normal.woff2") format("woff2"); }
+.ico { width: 1em; height: 1em; fill: currentColor; display: inline-block; vertical-align: -.125em; flex: none; }
+
 /* Theme tokens: light is the default, dark overrides via html[data-theme="dark"] */
 :root {
   --bg: #ffffff; --band: #f3f7ff; --ink: #14213d; --body2: #33425e; --muted: #5b6b86; --line: #dbe5f5; --card: #ffffff;
@@ -17,7 +24,7 @@ html[data-theme="dark"] {
   --toggler-filter: invert(1);
 }
 html { scroll-behavior: smooth; scroll-padding-top: 64px; }
-body { font-family: "Muli", system-ui, sans-serif; color: var(--ink); background: var(--bg); font-size: 1.05rem; transition: background .3s, color .3s; }
+body { font-family: "Mulish", system-ui, sans-serif; color: var(--ink); background: var(--bg); font-size: 1.05rem; transition: background .3s, color .3s; }
 h1, h2, h3, .display-font { font-family: "League Spartan", system-ui, sans-serif; }
 a { color: var(--link); }
 
@@ -35,9 +42,9 @@ a { color: var(--link); }
 .site-nav .navbar-toggler-icon { filter: var(--toggler-filter); }
 .theme-btn { background: none; border: 1px solid transparent; color: var(--nav-fg); width: 2.4rem; height: 2.4rem; border-radius: 50%; font-size: 1.05rem; line-height: 1; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
 .theme-btn:hover { color: var(--accent); border-color: var(--line); }
-.theme-btn .fa-sun { display: none; }
-html[data-theme="dark"] .theme-btn .fa-sun { display: inline-block; }
-html[data-theme="dark"] .theme-btn .fa-moon { display: none; }
+.theme-btn .i-sun { display: none; }
+html[data-theme="dark"] .theme-btn .i-sun { display: inline-block; }
+html[data-theme="dark"] .theme-btn .i-moon { display: none; }
 @media (max-width: 991.98px) { .site-nav.scrolled, .site-nav.menu-open { background: var(--nav-bg); } .site-nav .navbar-collapse { padding: .5rem 0 .8rem; } }
 
 /* Hero: a light and a dark version that crossfade when the theme changes */
@@ -68,9 +75,6 @@ html[data-theme="dark"] .hero-art-dark { opacity: 1; }
 .social { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; margin-top: 1.8rem; }
 .social a { width: 3.1rem; height: 3.1rem; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: var(--icon-bg); color: var(--icon-fg); font-size: 1.35rem; text-decoration: none; transition: background .2s, color .2s, transform .2s; }
 .social a:hover { background: var(--accent); color: var(--icon-hover-fg); transform: translateY(-3px); }
-.social img { width: 1.5rem; height: 1.5rem; }
-html:not([data-theme="dark"]) .social img { filter: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(2200%) hue-rotate(205deg) brightness(95%); }
-html:not([data-theme="dark"]) .social a:hover img { filter: brightness(0) invert(1); }
 .social-break { display: none; }
 .scroll-hint { display: inline-block; margin-top: 2.5rem; color: var(--accent); font-size: 1.6rem; text-decoration: none; }
 @media (max-width: 575.98px) { .social-break { display: block; flex-basis: 100%; height: 0; } .social { gap: .8rem .7rem; } .big { font-size: 1.9rem; margin-bottom: 1.6rem; } .lead { font-size: 1.05rem; } .item h3, .card-p h3 { font-size: 1.25rem; } .hero { padding-top: 6rem; } .hero .avatar { width: 140px; height: 140px; } .social a { width: 2.8rem; height: 2.8rem; font-size: 1.2rem; } .hero-art .l, .hero-art .h { opacity: .5; width: 100%; } }
@@ -106,7 +110,4 @@ footer { background: var(--band); color: var(--muted); border-top: 1px solid var
 html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after {
   transition: background-color .45s ease, color .45s ease, border-color .45s ease, box-shadow .45s ease, fill .45s ease, stroke .45s ease, opacity .45s ease !important; }
 
-/* Fade-in on scroll (content stays visible if JS fails) */
-.reveal-ready .rv { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease, color .45s ease, background-color .45s ease, border-color .45s ease; }
-.reveal-ready .rv.in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after { transition: none !important; } .reveal-ready .rv { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
+@media (prefers-reduced-motion: reduce) { html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after { transition: none !important; } html { scroll-behavior: auto; } }

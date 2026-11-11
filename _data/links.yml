@@ -1,21 +1,21 @@
 - label: Email
   url: mailto:mcisneiros@inesc-id.pt
-  icon: fas fa-envelope
+  icon: envelope
 - label: GitHub
   url: https://github.com/mcisneiros
-  icon: fab fa-github
+  icon: github
 - label: LinkedIn
   url: https://www.linkedin.com/in/miguel-cisneiros/
-  icon: fab fa-linkedin-in
+  icon: linkedin
 - label: ORCID
   url: https://orcid.org/0000-0002-6681-8564
-  icon: fab fa-orcid
+  icon: orcid
 - label: Google Scholar
   url: https://scholar.google.com/citations?user=2060wx0AAAAJ&hl=en
-  icon: fab fa-google-scholar
+  icon: scholar
 - label: Ciência Vitae
   url: https://www.cienciavitae.pt/pt/FD1B-7F47-2CAC
-  icon: ai ai-ciencia-vitae
+  icon: cv
 - label: alphaXiv
   url: https://www.alphaxiv.org/@miguel-cisneiros
-  img: /assets/img/alphaxiv.svg
+  icon: alphaxiv
