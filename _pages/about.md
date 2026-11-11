@@ -7,12 +7,16 @@ description: Pre-doctoral researcher at INESC-ID / Instituto Superior Técnico (
 
 profile:
   align: right
-  # TODO: add a profile photo to assets/img/ and set `image: <filename>` here
+  image: prof_pic.jpg # file lives in assets/img/
+  image_circular: true
+  # The wrapper div overrides the theme's monospace font for the address block.
   more_info: >
-    <p>Machine Learning and Knowledge Discovery group</p>
-    <p>INESC-ID / Instituto Superior Técnico</p>
-    <p>Universidade de Lisboa</p>
-    <p>Lisbon, Portugal</p>
+    <div style="font-family: Roboto, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; line-height: 1.5; margin-top: 0.5rem;">
+    <p style="display: block;">Machine Learning and Knowledge Discovery group</p>
+    <p style="display: block;">INESC-ID / Instituto Superior Técnico</p>
+    <p style="display: block;">Universidade de Lisboa</p>
+    <p style="display: block;">Lisbon, Portugal</p>
+    </div>
 
 selected_papers: false
 social: true # contact icons at the bottom (configured in _data/socials.yml)
