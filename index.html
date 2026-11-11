@@ -92,7 +92,7 @@
                             <h3 class="mb-0">{{ p.name }}</h3>
                             <div class="subheading mb-3">{{ p.meta }}</div>
                             <p{% unless p.url %} class="mb-0"{% endunless %}>{{ p.text }}</p>
-                            {% if p.url %}<p class="mb-0"><a href="{{ p.url }}">{{ p.link }}</a></p>{% endif %}
+                            {% if p.url %}<p class="mb-0"><a href="{{ p.url }}">{{ p.link }}</a>{% if p.url2 %} · <a href="{{ p.url2 }}">{{ p.link2 }}</a>{% endif %}</p>{% endif %}
                         </div>
                     </div>
                     {% endfor %}
