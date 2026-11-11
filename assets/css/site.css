@@ -42,7 +42,7 @@ html[data-theme="dark"] .theme-btn .fa-moon { display: none; }
 
 /* Hero: a light and a dark version that crossfade when the theme changes */
 .hero { position: relative; isolation: isolate; min-height: 100vh; display: flex; align-items: center; text-align: center; color: var(--hero-fg); padding: 7rem 0 8rem; background: var(--bg); transition: background-color .45s ease; }
-.hero-art { position: absolute; inset: 0; z-index: -2; pointer-events: none; transition: opacity .45s ease; }
+.hero-art { position: absolute; inset: 0; z-index: -2; pointer-events: none; transition: opacity .45s ease; will-change: opacity; }
 .hero-art i { position: absolute; top: 0; bottom: 0; background-repeat: no-repeat; background-size: auto 100%; }
 .hero-art .l { left: 0; width: 62%; background-position: left center; }
 .hero-art .h { right: 0; width: 68%; background-position: right center; }
@@ -51,11 +51,11 @@ html[data-theme="dark"] .theme-btn .fa-moon { display: none; }
 .hero-art-light .l { background-image: url("../img/hero-letters-light.svg"); }
 .hero-art-light .h { background-image: url("../img/hero-helix-light.svg"); }
 .hero-art-light .s { background: radial-gradient(ellipse 52% 48% at 50% 54%, rgba(255,255,255,.93), rgba(255,255,255,.6) 55%, transparent 100%); }
-.hero-art-dark { opacity: 0; background: radial-gradient(ellipse 55% 50% at 85% 30%, rgba(30,100,220,.38), transparent 100%), radial-gradient(ellipse 40% 45% at 6% 40%, rgba(30,100,220,.22), transparent 100%); }
+.hero-art-dark { opacity: .01; background: radial-gradient(ellipse 55% 50% at 85% 30%, rgba(30,100,220,.38), transparent 100%), radial-gradient(ellipse 40% 45% at 6% 40%, rgba(30,100,220,.22), transparent 100%); }
 .hero-art-dark .l { background-image: url("../img/hero-letters-dark.svg"); }
 .hero-art-dark .h { background-image: url("../img/hero-helix-dark.svg"); }
 .hero-art-dark .s { background: radial-gradient(ellipse 48% 46% at 50% 54%, rgba(6,15,38,.7), transparent 100%); }
-html[data-theme="dark"] .hero-art-light { opacity: 0; }
+html[data-theme="dark"] .hero-art-light { opacity: .01; }
 html[data-theme="dark"] .hero-art-dark { opacity: 1; }
 .hero-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 26%; z-index: -1; background-color: var(--bg);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.12) 30%, rgba(0,0,0,.5) 62%, #000 100%); mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.12) 30%, rgba(0,0,0,.5) 62%, #000 100%); }
@@ -101,9 +101,9 @@ footer { background: #020712; color: #8aa3c9; padding: 1.5rem 0; font-size: .9re
 
 /* Smooth light/dark switch: the class is added by site.js only while toggling */
 html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after {
-  transition: background-color .45s ease, color .45s ease, border-color .45s ease, box-shadow .45s ease, fill .45s ease, stroke .45s ease !important; }
+  transition: background-color .45s ease, color .45s ease, border-color .45s ease, box-shadow .45s ease, fill .45s ease, stroke .45s ease, opacity .45s ease !important; }
 
 /* Fade-in on scroll (content stays visible if JS fails) */
-.reveal-ready .rv { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+.reveal-ready .rv { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease, color .45s ease, background-color .45s ease, border-color .45s ease; }
 .reveal-ready .rv.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after { transition: none !important; } .reveal-ready .rv { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
