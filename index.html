@@ -5,348 +5,276 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Bioinformatician and pre-doctoral research fellow at INESC-ID / Instituto Superior Técnico (University of Lisbon). MALDIBANK, MALDI-TOF mass spectrometry, FAIR data." />
         <meta name="author" content="Miguel Cisneiros" />
+        <meta name="color-scheme" content="light dark" />
         <title>Miguel Cisneiros</title>
+        <script>
+            (function () {
+                var t = null;
+                try { t = localStorage.getItem('theme'); } catch (e) {}
+                if (t !== 'light' && t !== 'dark') { t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+                document.documentElement.setAttribute('data-theme', t);
+            })();
+        </script>
         <link rel="canonical" href="https://mcisneiros.github.io/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Miguel Cisneiros" />
         <meta property="og:description" content="Bioinformatician and pre-doctoral research fellow at INESC-ID / Instituto Superior Técnico (University of Lisbon). MALDIBANK, MALDI-TOF mass spectrometry, FAIR data." />
         <meta property="og:url" content="https://mcisneiros.github.io/" />
         <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧬%3C/text%3E%3C/svg%3E" />
-        <!-- Font Awesome icons (free version)-->
+        <!-- Font Awesome icons (free)-->
         <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/js/all.min.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" rel="stylesheet" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (Start Bootstrap Resume, MIT; includes Bootstrap)-->
-        <link href="/assets/css/styles.css" rel="stylesheet" />
-        <link href="/assets/css/theme.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/assets/css/site.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Miguel Cisneiros</span>
-                <span class="d-none d-lg-block">
-                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/assets/img/profile.jpg" alt="Miguel Cisneiros" />
-                </span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#outputs">Outputs</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Miguel
-                        <span class="text-primary">Cisneiros</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Research Fellow · INESC-ID / Instituto Superior Técnico, Universidade de Lisboa · Lisbon, Portugal ·
-                        <a href="mailto:mcisneiros@inesc-id.pt">mcisneiros@inesc-id.pt</a>
-                    </div>
-                    <p class="lead mb-4">I'm a bioinformatician and pre-doctoral research fellow in the Machine Learning and Knowledge Discovery group at INESC-ID, supervised by Prof. Ana Teresa Freitas. I work on MALDIBANK, a Horizon Europe project that applies machine learning to MALDI-TOF mass spectrometry for microbial identification and antibiotic resistance monitoring.</p>
-                    <p class="mb-5">I hold a BSc in Bioinformatics (Polytechnic of Setúbal) and an MSc in Evolutionary and Developmental Biology (University of Lisbon), with a thesis at the Gulbenkian Science Institute on the comparative demography of endangered species. Before INESC-ID I was a Data Steward and Bioinformatics Technician at BioData.pt (ELIXIR Portugal), working on FAIR data, GDPR and the FEGA Portugal node for sensitive data, and a research fellow on soil ontologies in the PHENET project at ITQB NOVA. I also did an Erasmus+ traineeship at KU Leuven on in silico alternatives to animal toxicity testing, and I am a Fulbright SUSI alumnus.</p>
-                    <div class="social-icons">
-                        
-                        <a class="social-icon" href="mailto:mcisneiros@inesc-id.pt" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        
-                        <a class="social-icon" href="https://github.com/mcisneiros" title="GitHub" aria-label="GitHub" rel="me noopener"><i class="fab fa-github"></i></a>
-                        
-                        <a class="social-icon" href="https://www.linkedin.com/in/miguel-cisneiros/" title="LinkedIn" aria-label="LinkedIn" rel="me noopener"><i class="fab fa-linkedin-in"></i></a>
-                        
-                        <a class="social-icon" href="https://orcid.org/0000-0002-6681-8564" title="ORCID" aria-label="ORCID" rel="me noopener"><i class="fab fa-orcid"></i></a>
-                        
-                        <a class="social-icon" href="https://scholar.google.com/citations?user=2060wx0AAAAJ&hl=en" title="Google Scholar" aria-label="Google Scholar" rel="me noopener"><i class="fab fa-google-scholar"></i></a>
-                        
-                        <a class="social-icon" href="https://www.cienciavitae.pt/pt/FD1B-7F47-2CAC" title="Ciência Vitae" aria-label="Ciência Vitae" rel="me noopener"><i class="ai ai-ciencia-vitae"></i></a>
-                        
-                        <a class="social-icon" href="https://www.alphaxiv.org/@miguel-cisneiros" title="alphaXiv" aria-label="alphaXiv" rel="me noopener"><img src="/assets/img/alphaxiv.svg" alt="" /></a>
-                        
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Research Fellow, MALDIBANK</h3>
-                            <div class="subheading mb-3">INESC-ID / Instituto Superior Técnico, Universidade de Lisboa</div>
-                            <p>Machine Learning and Knowledge Discovery group, supervised by Prof. Ana Teresa Freitas. Bioinformatics on MALDIBANK, a European Commission funded project.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jan 2026 – present</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Visiting researcher</h3>
-                            <div class="subheading mb-3">Guangzhou Medical University, China</div>
-                            <p>China–Portugal Joint Laboratory on AI and Public Health Technologies (INESC-ID, Guangzhou Laboratory, Guangzhou Medical University, MUST). Evolutionary genomic signals for influenza forecasting; codon-level selection analysis of Nipah virus genomes.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jun – Sep 2026</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Collaborator, FEGA Portugal</h3>
-                            <div class="subheading mb-3">BioData.pt, ELIXIR Portugal</div>
-                            <p>Data steward for sensitive data, helpdesk officer and SOP writing for the Portuguese node of the Federated European Genome-phenome Archive.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Mar – Dec 2025</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Data Steward and Bioinformatics Technician</h3>
-                            <div class="subheading mb-3">BioData.pt, ELIXIR Portugal</div>
-                            <p>FAIR principles and GDPR compliance, SOP development, metadata curation, data standards and technical writing.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jul 2024 – Dec 2025</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Research Fellow, PHENET</h3>
-                            <div class="subheading mb-3">ITQB NOVA</div>
-                            <p>Design and curation of soil ontologies for the semantic integration of environmental datasets. Supervisor Inês Chaves.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jul 2024 – Mar 2025</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">MSc thesis student</h3>
-                            <div class="subheading mb-3">Population and Conservation Genetics group, Gulbenkian Science Institute (IGC)</div>
-                            <p>Comparative demography of endangered species using genomic data. Supervisors Lounès Chikhi and Margarida Matos.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Nov 2022 – Nov 2024</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Curricular internship (Erasmus+)</h3>
-                            <div class="subheading mb-3">KU Leuven, Belgium</div>
-                            <p>In silico strategies to advance the 3Rs in toxicity testing. Supervisors Vera van Noort and Diksha Bhalla.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Feb – Jul 2021</span></div>
-                    </div>
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Projects-->
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">MALDIBANK</h3>
-                            <div class="subheading mb-3">INESC-ID / IST · 2026 – present</div>
-                            <p class="mb-0">European Commission funded project combining MALDI-TOF mass spectrometry of microbes with machine learning, aimed at microbial identification and antibiotic resistance monitoring. I work on the bioinformatics side as a research fellow.</p>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">FEGA Portugal</h3>
-                            <div class="subheading mb-3">BioData.pt / ELIXIR Portugal · 2025</div>
-                            <p>Portuguese node of the Federated European Genome-phenome Archive. I worked as data steward for sensitive data, helpdesk officer and SOP writer, and co-authored the FEGA metadata technical report (EGA v2 model).</p>
-                            <p class="mb-0"><a href="https://doi.org/10.5281/zenodo.19388370">Technical report (Zenodo)</a></p>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">PHENET soil ontologies</h3>
-                            <div class="subheading mb-3">ITQB NOVA · 2024 – 2025</div>
-                            <p class="mb-0">Design and curation of soil ontologies to improve the semantic integration of environmental datasets.</p>
-                            
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Comparative demography of endangered species</h3>
-                            <div class="subheading mb-3">MSc thesis, IGC / FCUL · 2022 – 2024</div>
-                            <p>Demographic history and population structure of mouse lemurs (Microcebus) inferred from genomic data, using PSMC and the SNIF structured non-stationary inference framework.</p>
-                            <p class="mb-0"><a href="https://hdl.handle.net/10400.5/96800">Thesis (repository)</a></p>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">DARTpaths</h3>
-                            <div class="subheading mb-3">KU Leuven · 2021</div>
-                            <p>Platform for investigating the molecular mechanisms of compounds and finding conserved orthologs between model organisms, part of a project on in silico strategies to advance the 3Rs in toxicity testing. During my internship I added Drosophila melanogaster through the phenotype enrichment tool, automated data file availability, and built a method to extract and summarise orthologous genes from Notung files.</p>
-                            <p class="mb-0"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9825785">DARTpaths paper (PubMed Central)</a> · <a href="https://www.academia.edu/download/70012930/Relat_rio_de_Est_gio_ERASMUS_KULeuven_e_IPS_com_correcoes.pdf">My internship report (PDF)</a></p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Outputs-->
-            <section class="resume-section" id="outputs">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Outputs</h2>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"><a href="https://doi.org/10.5281/zenodo.19388370">FEGA Metadata Technical Report, EGA v2 model</a></h3>
-                            <div class="subheading mb-3">Report</div>
-                            <p class="mb-0">FEGA Metadata Working Group (co-author) · Zenodo, v1.0.1</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2026</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"><a href="https://doi.org/10.7490/f1000research.1120225.1">Advancing FEGA Portugal</a></h3>
-                            <div class="subheading mb-3">Poster</div>
-                            <p class="mb-0">Oliveira JS, Cisneiros M, et al. · F1000Research 14(ELIXIR):610</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2025</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"><a href="https://hdl.handle.net/10400.5/96800">Comparative demography of endangered species using genomic data</a></h3>
-                            <div class="subheading mb-3">Thesis</div>
-                            <p class="mb-0">Cisneiros M · MSc thesis, Faculty of Sciences, University of Lisbon</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Comparative demography of endangered species using genomic data</h3>
-                            <div class="subheading mb-3">Poster</div>
-                            <p class="mb-0">Cisneiros M · XIX ENBE, National Meeting of Evolutionary Biology, Lisbon</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2023</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"><a href="https://www.academia.edu/download/70012930/Relat_rio_de_Est_gio_ERASMUS_KULeuven_e_IPS_com_correcoes.pdf">Development of In-silico Strategies To Advance the 3Rs in Toxicity Testing</a></h3>
-                            <div class="subheading mb-3">Report</div>
-                            <p class="mb-0">Cisneiros M · Erasmus+ curricular internship report, KU Leuven / Polytechnic of Setúbal</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2021</span></div>
-                    </div>
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Advanced Training Diploma in Research Methodology and Techniques</h3>
-                            <div class="subheading mb-3">Instituto Superior Técnico</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2026</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">MSc in Evolutionary and Developmental Biology</h3>
-                            <div class="subheading mb-3">Faculty of Sciences, University of Lisbon (FCUL) · final grade 16/20</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2021 – 2024</span></div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">BSc in Bioinformatics</h3>
-                            <div class="subheading mb-3">Barreiro School of Technology, Polytechnic of Setúbal · final grade 16/20</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2018 – 2021</span></div>
-                    </div>
-                    
-                    <div class="subheading mb-3">Courses and events</div>
-                    <ul class="fa-ul mb-0">
-                        
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            ELIXIR-GOBLET Train-the-Trainer (online) <span class="text-primary">(Feb 2026)</span>
-                        </li>
-                        
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            BioHackathon Germany 2024, ELIXIR Germany / de.NBI, Kassel. LLMs, ontology mapping, Bioschemas and RO-Crates <span class="text-primary">(Dec 2024)</span>
-                        </li>
-                        
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            PHENET Data Management Training, INRAE, Paris <span class="text-primary">(Dec 2024)</span>
-                        </li>
-                        
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            XIII Bioinformatics Open Days, UMinho, Braga <span class="text-primary">(Mar 2024)</span>
-                        </li>
-                        
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            XIX ENBE, National Meeting of Evolutionary Biology, Lisbon (poster) <span class="text-primary">(Dec 2023)</span>
-                        </li>
-                        
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            TULIP Summer School, LabEx TULIP, Toulouse <span class="text-primary">(Jul 2023)</span>
-                        </li>
-                        
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            13th International Course on Developmental Biology, Sorbonne Université and Institut Curie, Paris <span class="text-primary">(Sep – Oct 2022)</span>
-                        </li>
-                        
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Fulbright SUSI for Student Leaders on Civic Engagement, University of South Carolina <span class="text-primary">(2021 and 2022)</span>
-                        </li>
-                        
+    <body id="top" data-bs-spy="scroll" data-bs-target="#menu" data-bs-root-margin="-20% 0px -70% 0px" data-bs-smooth-scroll="true" tabindex="0">
+        <a class="visually-hidden-focusable position-absolute p-2 bg-white" style="z-index:2000" href="#about">Skip to content</a>
+        <nav class="navbar navbar-expand-lg fixed-top site-nav" id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="#top">M. Cisneiros</a>
+                <button class="theme-btn d-lg-none ms-auto me-2" type="button" aria-label="Toggle light or dark theme"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#outputs">Outputs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item d-none d-lg-block ms-lg-2"><button class="theme-btn" type="button" aria-label="Toggle light or dark theme"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button></li>
                     </ul>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming and tools</div>
-                    <p>Python (NumPy, Pandas, Matplotlib, scikit-learn), Bash, git, R, SQL</p>
-                    <div class="subheading mb-3">Areas</div>
-                    <p>FAIR data, metadata and ontologies, GDPR, MALDI-TOF mass spectrometry, population genomics</p>
-                    <div class="subheading mb-3">Languages</div>
-                    <p class="mb-0">Portuguese (native), English (C1), French (B1), Dutch (A1)</p>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div class="hero-scrim"></div>
+            <div class="container">
+                <img class="avatar" src="/assets/img/profile.jpg" alt="Miguel Cisneiros" />
+                <h1>Miguel <span>Cisneiros</span></h1>
+                <div class="role">Research Fellow · Bioinformatician</div>
+                <div class="where">INESC-ID / Instituto Superior Técnico, Universidade de Lisboa · Lisbon, Portugal</div>
+                <div class="social">
+                    <a href="mailto:mcisneiros@inesc-id.pt" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a><a href="https://github.com/mcisneiros" title="GitHub" aria-label="GitHub" rel="me noopener"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/miguel-cisneiros/" title="LinkedIn" aria-label="LinkedIn" rel="me noopener"><i class="fab fa-linkedin-in"></i></a><a href="https://orcid.org/0000-0002-6681-8564" title="ORCID" aria-label="ORCID" rel="me noopener"><i class="fab fa-orcid"></i></a><a href="https://scholar.google.com/citations?user=2060wx0AAAAJ&hl=en" title="Google Scholar" aria-label="Google Scholar" rel="me noopener"><i class="fab fa-google-scholar"></i></a><a href="https://www.cienciavitae.pt/pt/FD1B-7F47-2CAC" title="Ciência Vitae" aria-label="Ciência Vitae" rel="me noopener"><i class="ai ai-ciencia-vitae"></i></a><a href="https://www.alphaxiv.org/@miguel-cisneiros" title="alphaXiv" aria-label="alphaXiv" rel="me noopener"><img src="/assets/img/alphaxiv.svg" alt="" /></a>
                 </div>
-            </section>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="/assets/js/scripts.js"></script>
+                <a class="scroll-hint" href="#about" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </header>
+
+        <section class="sec" id="about">
+            <div class="container">
+                <h2 class="big rv">About me</h2>
+                <div class="row">
+                    <div class="col-lg-9 rv">
+                        <p class="lead">I'm a bioinformatician and pre-doctoral research fellow in the Machine Learning and Knowledge Discovery group at INESC-ID, supervised by Prof. Ana Teresa Freitas. I work on MALDIBANK, a Horizon Europe project that applies machine learning to MALDI-TOF mass spectrometry for microbial identification and antibiotic resistance monitoring.</p>
+                        <p>I hold a BSc in Bioinformatics (Polytechnic of Setúbal) and an MSc in Evolutionary and Developmental Biology (University of Lisbon), with a thesis at the Gulbenkian Science Institute on the comparative demography of endangered species. Before INESC-ID I was a Data Steward and Bioinformatics Technician at BioData.pt (ELIXIR Portugal), working on FAIR data, GDPR and the FEGA Portugal node for sensitive data, and a research fellow on soil ontologies in the PHENET project at ITQB NOVA. I also did an Erasmus+ traineeship at KU Leuven on in silico alternatives to animal toxicity testing, and I am a Fulbright SUSI alumnus.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec alt" id="experience">
+            <div class="container">
+                <h2 class="big rv">Experience</h2>
+                
+                <div class="item rv">
+                    <div class="when">Jan 2026 – present</div>
+                    <div><h3>Research Fellow, MALDIBANK</h3><div class="org">INESC-ID / Instituto Superior Técnico, Universidade de Lisboa</div><p>Machine Learning and Knowledge Discovery group, supervised by Prof. Ana Teresa Freitas. Bioinformatics on MALDIBANK, a European Commission funded project.</p></div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">Jun – Sep 2026</div>
+                    <div><h3>Visiting researcher</h3><div class="org">Guangzhou Medical University, China</div><p>China–Portugal Joint Laboratory on AI and Public Health Technologies (INESC-ID, Guangzhou Laboratory, Guangzhou Medical University, MUST). Evolutionary genomic signals for influenza forecasting; codon-level selection analysis of Nipah virus genomes.</p></div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">Mar – Dec 2025</div>
+                    <div><h3>Collaborator, FEGA Portugal</h3><div class="org">BioData.pt, ELIXIR Portugal</div><p>Data steward for sensitive data, helpdesk officer and SOP writing for the Portuguese node of the Federated European Genome-phenome Archive.</p></div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">Jul 2024 – Dec 2025</div>
+                    <div><h3>Data Steward and Bioinformatics Technician</h3><div class="org">BioData.pt, ELIXIR Portugal</div><p>FAIR principles and GDPR compliance, SOP development, metadata curation, data standards and technical writing.</p></div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">Jul 2024 – Mar 2025</div>
+                    <div><h3>Research Fellow, PHENET</h3><div class="org">ITQB NOVA</div><p>Design and curation of soil ontologies for the semantic integration of environmental datasets. Supervisor Inês Chaves.</p></div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">Nov 2022 – Nov 2024</div>
+                    <div><h3>MSc thesis student</h3><div class="org">Population and Conservation Genetics group, Gulbenkian Science Institute (IGC)</div><p>Comparative demography of endangered species using genomic data. Supervisors Lounès Chikhi and Margarida Matos.</p></div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">Feb – Jul 2021</div>
+                    <div><h3>Curricular internship (Erasmus+)</h3><div class="org">KU Leuven, Belgium</div><p>In silico strategies to advance the 3Rs in toxicity testing. Supervisors Vera van Noort and Diksha Bhalla.</p></div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="sec" id="projects">
+            <div class="container">
+                <h2 class="big rv">Projects</h2>
+                <div class="row g-4">
+                    
+                    <div class="col-md-6 rv">
+                        <div class="card-p">
+                            <h3>MALDIBANK</h3>
+                            <div class="meta">INESC-ID / IST · 2026 – present</div>
+                            <p>European Commission funded project combining MALDI-TOF mass spectrometry of microbes with machine learning, aimed at microbial identification and antibiotic resistance monitoring. I work on the bioinformatics side as a research fellow.</p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 rv">
+                        <div class="card-p">
+                            <h3>FEGA Portugal</h3>
+                            <div class="meta">BioData.pt / ELIXIR Portugal · 2025</div>
+                            <p>Portuguese node of the Federated European Genome-phenome Archive. I worked as data steward for sensitive data, helpdesk officer and SOP writer, and co-authored the FEGA metadata technical report (EGA v2 model).</p>
+                            <a class="lnk" href="https://doi.org/10.5281/zenodo.19388370">Technical report (Zenodo)</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 rv">
+                        <div class="card-p">
+                            <h3>PHENET soil ontologies</h3>
+                            <div class="meta">ITQB NOVA · 2024 – 2025</div>
+                            <p>Design and curation of soil ontologies to improve the semantic integration of environmental datasets.</p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 rv">
+                        <div class="card-p">
+                            <h3>Comparative demography of endangered species</h3>
+                            <div class="meta">MSc thesis, IGC / FCUL · 2022 – 2024</div>
+                            <p>Demographic history and population structure of mouse lemurs (Microcebus) inferred from genomic data, using PSMC and the SNIF structured non-stationary inference framework.</p>
+                            <a class="lnk" href="https://hdl.handle.net/10400.5/96800">Thesis (repository)</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 rv">
+                        <div class="card-p">
+                            <h3>DARTpaths</h3>
+                            <div class="meta">KU Leuven · 2021</div>
+                            <p>Platform for investigating the molecular mechanisms of compounds and finding conserved orthologs between model organisms, part of a project on in silico strategies to advance the 3Rs in toxicity testing. During my internship I added Drosophila melanogaster through the phenotype enrichment tool, automated data file availability, and built a method to extract and summarise orthologous genes from Notung files.</p>
+                            <a class="lnk" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9825785">DARTpaths paper (PubMed Central)</a><a class="lnk" href="https://www.academia.edu/download/70012930/Relat_rio_de_Est_gio_ERASMUS_KULeuven_e_IPS_com_correcoes.pdf">My internship report (PDF)</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="sec alt" id="outputs">
+            <div class="container">
+                <h2 class="big rv">Outputs</h2>
+                
+                <div class="item rv">
+                    <div class="when">2026 · Report</div>
+                    <div>
+                        <h3><a href="https://doi.org/10.5281/zenodo.19388370">FEGA Metadata Technical Report, EGA v2 model</a></h3>
+                        <div class="org">FEGA Metadata Working Group (co-author)</div>
+                        <p>Zenodo, v1.0.1</p>
+                    </div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">2025 · Poster</div>
+                    <div>
+                        <h3><a href="https://doi.org/10.7490/f1000research.1120225.1">Advancing FEGA Portugal</a></h3>
+                        <div class="org">Oliveira JS, Cisneiros M, et al.</div>
+                        <p>F1000Research 14(ELIXIR):610</p>
+                    </div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">2024 · Thesis</div>
+                    <div>
+                        <h3><a href="https://hdl.handle.net/10400.5/96800">Comparative demography of endangered species using genomic data</a></h3>
+                        <div class="org">Cisneiros M</div>
+                        <p>MSc thesis, Faculty of Sciences, University of Lisbon</p>
+                    </div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">2023 · Poster</div>
+                    <div>
+                        <h3>Comparative demography of endangered species using genomic data</h3>
+                        <div class="org">Cisneiros M</div>
+                        <p>XIX ENBE, National Meeting of Evolutionary Biology, Lisbon</p>
+                    </div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">2021 · Report</div>
+                    <div>
+                        <h3><a href="https://www.academia.edu/download/70012930/Relat_rio_de_Est_gio_ERASMUS_KULeuven_e_IPS_com_correcoes.pdf">Development of In-silico Strategies To Advance the 3Rs in Toxicity Testing</a></h3>
+                        <div class="org">Cisneiros M</div>
+                        <p>Erasmus+ curricular internship report, KU Leuven / Polytechnic of Setúbal</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="sec" id="education">
+            <div class="container">
+                <h2 class="big rv">Education</h2>
+                
+                <div class="item rv">
+                    <div class="when">2026</div>
+                    <div><h3>Advanced Training Diploma in Research Methodology and Techniques</h3><div class="org">Instituto Superior Técnico</div></div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">2021 – 2024</div>
+                    <div><h3>MSc in Evolutionary and Developmental Biology</h3><div class="org">Faculty of Sciences, University of Lisbon (FCUL) · final grade 16/20</div></div>
+                </div>
+                
+                <div class="item rv">
+                    <div class="when">2018 – 2021</div>
+                    <div><h3>BSc in Bioinformatics</h3><div class="org">Barreiro School of Technology, Polytechnic of Setúbal · final grade 16/20</div></div>
+                </div>
+                
+                <h3 class="display-font mt-5 mb-3 rv" style="font-size:1.8rem;text-transform:uppercase">Courses and events</h3>
+                <ul class="train rv">
+                    <li><span class="y">Feb 2026</span>ELIXIR-GOBLET Train-the-Trainer (online)</li><li><span class="y">Dec 2024</span>BioHackathon Germany 2024, ELIXIR Germany / de.NBI, Kassel. LLMs, ontology mapping, Bioschemas and RO-Crates</li><li><span class="y">Dec 2024</span>PHENET Data Management Training, INRAE, Paris</li><li><span class="y">Mar 2024</span>XIII Bioinformatics Open Days, UMinho, Braga</li><li><span class="y">Dec 2023</span>XIX ENBE, National Meeting of Evolutionary Biology, Lisbon (poster)</li><li><span class="y">Jul 2023</span>TULIP Summer School, LabEx TULIP, Toulouse</li><li><span class="y">Sep – Oct 2022</span>13th International Course on Developmental Biology, Sorbonne Université and Institut Curie, Paris</li><li><span class="y">2021 and 2022</span>Fulbright SUSI for Student Leaders on Civic Engagement, University of South Carolina</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sec dark" id="skills">
+            <div class="container">
+                <h2 class="big rv">Skills</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 skill rv"><h3>Programming and tools</h3><p>Python (NumPy, Pandas, Matplotlib, scikit-learn), Bash, git, R, SQL</p></div>
+                    <div class="col-md-4 skill rv"><h3>Areas</h3><p>FAIR data, metadata and ontologies, GDPR, MALDI-TOF mass spectrometry, population genomics</p></div>
+                    <div class="col-md-4 skill rv"><h3>Languages</h3><p>Portuguese (native), English (C1), French (B1), Dutch (A1)</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec text-center contact" id="contact">
+            <div class="container">
+                <h2 class="big rv">Contact</h2>
+                <a class="mail rv" href="mailto:mcisneiros@inesc-id.pt">mcisneiros@inesc-id.pt</a>
+                <div class="social rv">
+                    <a href="mailto:mcisneiros@inesc-id.pt" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a><a href="https://github.com/mcisneiros" title="GitHub" aria-label="GitHub" rel="me noopener"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/miguel-cisneiros/" title="LinkedIn" aria-label="LinkedIn" rel="me noopener"><i class="fab fa-linkedin-in"></i></a><a href="https://orcid.org/0000-0002-6681-8564" title="ORCID" aria-label="ORCID" rel="me noopener"><i class="fab fa-orcid"></i></a><a href="https://scholar.google.com/citations?user=2060wx0AAAAJ&hl=en" title="Google Scholar" aria-label="Google Scholar" rel="me noopener"><i class="fab fa-google-scholar"></i></a><a href="https://www.cienciavitae.pt/pt/FD1B-7F47-2CAC" title="Ciência Vitae" aria-label="Ciência Vitae" rel="me noopener"><i class="ai ai-ciencia-vitae"></i></a><a href="https://www.alphaxiv.org/@miguel-cisneiros" title="alphaXiv" aria-label="alphaXiv" rel="me noopener"><img src="/assets/img/alphaxiv.svg" alt="" /></a>
+                </div>
+            </div>
+        </section>
+
+        <footer>© Miguel Cisneiros · Lisbon</footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/assets/js/site.js"></script>
     </body>
 </html>
