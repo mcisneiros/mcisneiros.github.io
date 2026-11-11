@@ -20,7 +20,10 @@
   document.querySelectorAll('.theme-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.classList.add('theme-anim');
       root.setAttribute('data-theme', next);
+      clearTimeout(window.__themeT);
+      window.__themeT = setTimeout(function () { root.classList.remove('theme-anim'); }, 600);
       try { localStorage.setItem('theme', next); } catch (e) {}
     });
   });
