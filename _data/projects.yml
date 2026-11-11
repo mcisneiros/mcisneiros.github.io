@@ -2,10 +2,6 @@
   meta: INESC-ID / IST · 2026 – present
   text: European Commission funded project combining MALDI-TOF mass spectrometry of microbes with machine learning, aimed at microbial identification and antibiotic resistance monitoring. I work on the bioinformatics side as a research fellow.
 
-- name: MaldiQC
-  meta: Developed within MALDIBANK
-  text: Quality control pipeline for MALDI-TOF mass spectrometry data.
-
 - name: FEGA Portugal
   meta: BioData.pt / ELIXIR Portugal · 2025
   text: Portuguese node of the Federated European Genome-phenome Archive. I worked as data steward for sensitive data, helpdesk officer and SOP writer, and co-authored the FEGA metadata technical report (EGA v2 model).
