@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mcisneiros.github.io/miguelcisneiros/sitemap.xml
+Sitemap: https://mcisneiros.github.io/sitemap.xml
