@@ -31,3 +31,4 @@ section#about .social-icons .social-icon:hover { background: #1d6fe0; }
 }
 
 section#about .social-icons .social-icon { text-decoration: none; }
+section#about .social-icons .social-icon img { height: 1.7rem; width: 1.7rem; vertical-align: middle; }
