@@ -1,0 +1,190 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> DARTpaths | Miguel Cisneiros </title> <meta name="author" content="Miguel Cisneiros"> <meta name="description" content="In silico platform for investigating the molecular mechanisms of compounds (KU Leuven, 2021)"> <meta name="keywords" content="bioinformatics, data stewardship, FAIR data, research data management"> <meta property="og:site_name" content="Miguel Cisneiros"> <meta property="og:type" content="website"> <meta property="og:title" content="Miguel Cisneiros | DARTpaths"> <meta property="og:url" content="https://mcisneiros.github.io/projects/5_dartpaths/"> <meta property="og:description" content="In silico platform for investigating the molecular mechanisms of compounds (KU Leuven, 2021)"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="DARTpaths"> <meta name="twitter:description" content="In silico platform for investigating the molecular mechanisms of compounds (KU Leuven, 2021)"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Miguel Cisneiros"
+        },
+        "url": "https://mcisneiros.github.io/projects/5_dartpaths/",
+        "@type": "WebSite",
+        "description": "In silico platform for investigating the molecular mechanisms of compounds (KU Leuven, 2021)",
+        "headline": "DARTpaths",
+        
+        "sameAs": ["https://github.com/mcisneiros","https://www.linkedin.com/in/miguel-cisneiros","https://orcid.org/0000-0002-6681-8564","https://scholar.google.com/citations?user=2060wx0AAAAJ","https://www.cienciavitae.pt/pt/FD1B-7F47-2CAC","https://www.alphaxiv.org/@miguel-cisneiros"],
+        
+        "name": "Miguel Cisneiros",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%AC&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://mcisneiros.github.io/projects/5_dartpaths/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav sticky-bottom-footer"> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Miguel Cisneiros </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">DARTpaths</h1> <p class="post-description">In silico platform for investigating the molecular mechanisms of compounds (KU Leuven, 2021)</p> </header> <article> <p><strong>Role:</strong> BSc curricular internship (Erasmus+, 2021), KU Leuven, Belgium. Supervisors: Vera van Noort and Diksha Bhalla.</p> <p>DARTpaths is an in silico platform for investigating the molecular mechanisms of compounds. It is part of the project “Development of In silico Strategies To Advance the 3Rs in Toxicity Testing” at KU Leuven.</p> <p><strong>My contribution:</strong> I added <em>Drosophila melanogaster</em> to the platform.</p> </article> </div> </div> <footer class="sticky-bottom mt-5" role="contentinfo"> <div class="container"> © Copyright 2026 Miguel Cisneiros. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "Publications and posters.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "Research projects and tools.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Curriculum vitae.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "news-presented-a-poster-on-the-comparative-demography-of-endangered-species-at-the-xix-enbe-national-meeting-of-evolutionary-biology-lisbon",
+          title: 'Presented a poster on the comparative demography of endangered species at the XIX...',
+          description: "",
+          section: "News",},{id: "news-started-as-data-steward-and-bioinformatics-technician-at-biodata-pt-elixir-portugal-and-as-research-fellow-in-the-phenet-project-itqb-nova",
+          title: 'Started as Data Steward and Bioinformatics Technician at BioData.pt (ELIXIR Portugal), and as...',
+          description: "",
+          section: "News",},{id: "news-attended-the-phenet-data-management-training-at-inrae-paris",
+          title: 'Attended the PHENET Data Management Training at INRAE, Paris.',
+          description: "",
+          section: "News",},{id: "news-took-part-in-biohackathon-germany-2024-elixir-germany-de-nbi-in-kassel-llms-ontology-mapping-and-bioschemas-ro-crates",
+          title: 'Took part in BioHackathon Germany 2024 (ELIXIR Germany / de.NBI) in Kassel: LLMs,...',
+          description: "",
+          section: "News",},{id: "news-joined-fega-portugal-biodata-pt-elixir-portugal-as-data-steward-of-sensitive-data-and-helpdesk-officer",
+          title: 'Joined FEGA Portugal (BioData.pt, ELIXIR Portugal) as Data Steward of Sensitive Data and...',
+          description: "",
+          section: "News",},{id: "news-started-as-a-pre-doctoral-researcher-at-inesc-id-instituto-superior-técnico-university-of-lisbon-in-the-machine-learning-and-knowledge-discovery-group-working-on-ai-for-maldi-tof-mass-spectrometry-in-the-maldibank-horizon-europe-project",
+          title: 'Started as a pre-doctoral researcher at INESC-ID / Instituto Superior Técnico (University of...',
+          description: "",
+          section: "News",},{id: "projects-maldibank",
+          title: 'MALDIBANK',
+          description: "AI for MALDI-TOF spectra classification (Horizon Europe)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_maldibank/";
+            },},{id: "projects-maldiqc",
+          title: 'MaldiQC',
+          description: "MALDI-TOF MS quality control pipeline",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_maldiqc/";
+            },},{id: "projects-phenet",
+          title: 'PHENET',
+          description: "Soil ontologies for semantic integration of environmental datasets",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_phenet-soil-ontologies/";
+            },},{id: "projects-msc-thesis",
+          title: 'MSc thesis',
+          description: "Comparative demography of endangered species using genomic data (IGC)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_msc-thesis/";
+            },},{id: "projects-dartpaths",
+          title: 'DARTpaths',
+          description: "In silico platform for investigating the molecular mechanisms of compounds (KU Leuven, 2021)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_dartpaths/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%6D%63%69%73%6E%65%69%72%6F%73@%69%6E%65%73%63-%69%64.%70%74", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/mcisneiros", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/miguel-cisneiros", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0002-6681-8564", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=2060wx0AAAAJ", "_blank");
+        },
+      },{
+        id: 'social-cienciavitae',
+        title: 'Cienciavitae',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.cienciavitae.pt/pt/FD1B-7F47-2CAC", "_blank");
+        },
+      },{
+        id: 'social-alphaxiv',
+        title: 'Alphaxiv',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.alphaxiv.org/@miguel-cisneiros", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>

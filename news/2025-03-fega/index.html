@@ -11,7 +11,7 @@
 ",
         "headline": "2025 03 Fega",
         
-        "sameAs": ["https://github.com/mcisneiros"],
+        "sameAs": ["https://github.com/mcisneiros","https://www.linkedin.com/in/miguel-cisneiros","https://orcid.org/0000-0002-6681-8564","https://scholar.google.com/citations?user=2060wx0AAAAJ","https://www.cienciavitae.pt/pt/FD1B-7F47-2CAC","https://www.alphaxiv.org/@miguel-cisneiros"],
         
         "name": "Miguel Cisneiros",
         "@context": "https://schema.org"
@@ -99,12 +99,59 @@ ninja.data = [{
           description: "Comparative demography of endangered species using genomic data (IGC)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_msc-thesis/";
+            },},{id: "projects-dartpaths",
+          title: 'DARTpaths',
+          description: "In silico platform for investigating the molecular mechanisms of compounds (KU Leuven, 2021)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_dartpaths/";
             },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%6D%63%69%73%6E%65%69%72%6F%73@%69%6E%65%73%63-%69%64.%70%74", "_blank");
+        },
+      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/mcisneiros", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/miguel-cisneiros", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0002-6681-8564", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=2060wx0AAAAJ", "_blank");
+        },
+      },{
+        id: 'social-cienciavitae',
+        title: 'Cienciavitae',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.cienciavitae.pt/pt/FD1B-7F47-2CAC", "_blank");
+        },
+      },{
+        id: 'social-alphaxiv',
+        title: 'Alphaxiv',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.alphaxiv.org/@miguel-cisneiros", "_blank");
         },
       },{
         id: 'social-rss',
