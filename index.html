@@ -1,107 +1,162 @@
 ---
-layout: default
 ---
-<header class="top">
-  {% if site.show_photo %}
-  <img class="photo" src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Miguel Cisneiros" width="120" height="120">
-  {% endif %}
-  <div>
-    <h1>Miguel Cisneiros</h1>
-    <p class="role">Bioinformatician · Research Fellow at INESC-ID / Instituto Superior Técnico, Universidade de Lisboa</p>
-    <p class="where">Machine Learning and Knowledge Discovery group · Lisbon, Portugal</p>
-  </div>
-</header>
-
-<nav aria-label="Sections">
-  <a href="#about">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#outputs">Outputs</a>
-  <a href="#education">Education</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<main id="main">
-  <section id="about">
-    <h2>About</h2>
-    <p>I'm a bioinformatician and research fellow at INESC-ID, Instituto Superior Técnico (University of Lisbon), in the Machine Learning and Knowledge Discovery group, supervised by Prof. Ana Teresa Freitas. I work on <strong>MALDIBANK</strong>, a European Commission funded project that combines microbial mass spectrometry and AI.</p>
-    <p>Before that I worked in research data management at BioData.pt (ELIXIR Portugal), on FAIR data, metadata and sensitive-data governance in FEGA Portugal, and on soil ontologies in the PHENET project. My MSc, in evolutionary and developmental biology at the University of Lisbon, ended with a thesis on demographic inference in mouse lemurs at the Gulbenkian Science Institute.</p>
-    <p class="muted">Interests: AI for mass spectrometry, FAIR data and ontologies, evolutionary and population genomics.</p>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <ol class="timeline">
-      {% for e in site.data.experience %}
-      <li>
-        <span class="when">{{ e.dates }}</span>
-        <div>
-          <h3>{{ e.role }}</h3>
-          <p class="org">{{ e.org }}</p>
-          <p>{{ e.detail }}</p>
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="{{ site.description | strip_newlines }}" />
+        <meta name="author" content="Miguel Cisneiros" />
+        <title>Miguel Cisneiros</title>
+        <link rel="canonical" href="{{ site.url }}/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Miguel Cisneiros" />
+        <meta property="og:description" content="{{ site.description | strip_newlines }}" />
+        <meta property="og:url" content="{{ site.url }}/" />
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧬%3C/text%3E%3C/svg%3E" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (Start Bootstrap Resume, MIT; includes Bootstrap)-->
+        <link href="{{ '/assets/css/styles.css' | relative_url }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Miguel Cisneiros</span>
+                <span class="d-none d-lg-block">
+                    {% if site.show_photo %}<img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Miguel Cisneiros" />{% else %}Miguel Cisneiros{% endif %}
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#outputs">Outputs</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Miguel
+                        <span class="text-primary">Cisneiros</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        Research Fellow · INESC-ID / Instituto Superior Técnico, Universidade de Lisboa · Lisbon, Portugal ·
+                        <a href="mailto:mcisneiros@inesc-id.pt">mcisneiros@inesc-id.pt</a>
+                    </div>
+                    <p class="lead mb-5">I'm a bioinformatician in the Machine Learning and Knowledge Discovery group at INESC-ID, supervised by Prof. Ana Teresa Freitas. I work on MALDIBANK, a European Commission funded project that combines microbial mass spectrometry and AI. Before that I worked in research data management at BioData.pt (ELIXIR Portugal) and on soil ontologies in PHENET.</p>
+                    <div class="social-icons">
+                        {% for l in site.data.links %}
+                        <a class="social-icon" href="{{ l.url }}" title="{{ l.label }}" aria-label="{{ l.label }}"{% unless l.url contains 'mailto:' %} rel="me noopener"{% endunless %}><i class="{{ l.icon }}"></i></a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    {% for e in site.data.experience %}
+                    <div class="d-flex flex-column flex-md-row justify-content-between{% unless forloop.last %} mb-5{% endunless %}">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">{{ e.role }}</h3>
+                            <div class="subheading mb-3">{{ e.org }}</div>
+                            <p>{{ e.detail }}</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{ e.dates }}</span></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    {% for p in site.data.projects %}
+                    <div class="d-flex flex-column flex-md-row justify-content-between{% unless forloop.last %} mb-5{% endunless %}">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">{{ p.name }}</h3>
+                            <div class="subheading mb-3">{{ p.meta }}</div>
+                            <p{% unless p.url %} class="mb-0"{% endunless %}>{{ p.text }}</p>
+                            {% if p.url %}<p class="mb-0"><a href="{{ p.url }}">{{ p.link }}</a></p>{% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Outputs-->
+            <section class="resume-section" id="outputs">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Outputs</h2>
+                    {% for o in site.data.outputs %}
+                    <div class="d-flex flex-column flex-md-row justify-content-between{% unless forloop.last %} mb-5{% endunless %}">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">{% if o.url %}<a href="{{ o.url }}">{{ o.title }}</a>{% else %}{{ o.title }}{% endif %}</h3>
+                            <div class="subheading mb-3">{{ o.kind }}</div>
+                            <p class="mb-0">{{ o.authors }} · {{ o.venue }}</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{ o.year }}</span></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    {% for e in site.data.education %}
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">{{ e.title }}</h3>
+                            <div class="subheading mb-3">{{ e.org }}</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{ e.dates }}</span></div>
+                    </div>
+                    {% endfor %}
+                    <div class="subheading mb-3">Courses and events</div>
+                    <ul class="fa-ul mb-0">
+                        {% for t in site.data.training %}
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            {{ t.text }} <span class="text-primary">({{ t.when }})</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming and tools</div>
+                    <p>Python (NumPy, Pandas, Matplotlib, scikit-learn), Bash, git, R, SQL</p>
+                    <div class="subheading mb-3">Areas</div>
+                    <p>FAIR data, metadata and ontologies, GDPR, MALDI-TOF mass spectrometry, population genomics</p>
+                    <div class="subheading mb-3">Languages</div>
+                    <p class="mb-0">Portuguese (native), English (C1), French (B1), Dutch (A1)</p>
+                </div>
+            </section>
         </div>
-      </li>
-      {% endfor %}
-    </ol>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="cards">
-      {% for p in site.data.projects %}
-      <article class="card">
-        <h3>{{ p.name }}</h3>
-        <p class="meta">{{ p.meta }}</p>
-        <p>{{ p.text }}</p>
-        {% if p.url %}<p><a href="{{ p.url }}">{{ p.link }}</a></p>{% endif %}
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section id="outputs">
-    <h2>Outputs</h2>
-    <ul class="list">
-      {% for o in site.data.outputs %}
-      <li>
-        <span class="when">{{ o.year }}</span>
-        <div>
-          {% if o.url %}<a href="{{ o.url }}">{{ o.title }}</a>{% else %}{{ o.title }}{% endif %}
-          <p class="meta">{{ o.authors }} · {{ o.venue }} · {{ o.kind }}</p>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>Education and training</h2>
-    <ol class="timeline">
-      {% for e in site.data.education %}
-      <li>
-        <span class="when">{{ e.dates }}</span>
-        <div>
-          <h3>{{ e.title }}</h3>
-          <p class="org">{{ e.org }}</p>
-        </div>
-      </li>
-      {% endfor %}
-    </ol>
-    <h3 class="sub">Courses and events</h3>
-    <ul class="list compact">
-      {% for t in site.data.training %}
-      <li><span class="when">{{ t.when }}</span><div>{{ t.text }}</div></li>
-      {% endfor %}
-    </ul>
-    <p class="muted">Skills: Python (NumPy, Pandas, Matplotlib, scikit-learn), Bash, git, R, SQL; FAIR data, metadata and ontologies, GDPR. Languages: Portuguese (native), English (C1), French (B1), Dutch (A1).</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul class="links">
-      {% for l in site.data.links %}
-      <li><a href="{{ l.url }}"{% unless l.url contains 'mailto:' %} rel="me noopener"{% endunless %}>{{ l.label }}</a></li>
-      {% endfor %}
-    </ul>
-  </section>
-</main>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ '/assets/js/scripts.js' | relative_url }}"></script>
+    </body>
+</html>
