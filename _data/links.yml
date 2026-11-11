@@ -9,13 +9,13 @@
   icon: fab fa-linkedin-in
 - label: ORCID
   url: https://orcid.org/0000-0002-6681-8564
-  icon: ai ai-orcid
+  icon: fab fa-orcid
 - label: Google Scholar
   url: https://scholar.google.com/citations?user=2060wx0AAAAJ&hl=en
-  icon: ai ai-google-scholar
+  icon: fab fa-google-scholar
 - label: Ciência Vitae
   url: https://www.cienciavitae.pt/pt/FD1B-7F47-2CAC
-  icon: ai ai-cv
+  icon: fas fa-id-card
 - label: alphaXiv
   url: https://www.alphaxiv.org/@miguel-cisneiros
-  icon: ai ai-arxiv
+  icon: fas fa-book-open

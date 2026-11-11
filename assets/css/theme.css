@@ -29,3 +29,5 @@ section#about .social-icons .social-icon:hover { background: #1d6fe0; }
 @media (max-width: 991.98px) {
   section#about { background-position: 70% center; }
 }
+
+section#about .social-icons .social-icon { text-decoration: none; }
