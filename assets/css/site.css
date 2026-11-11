@@ -77,7 +77,6 @@ html:not([data-theme="dark"]) .social a:hover img { filter: brightness(0) invert
 /* Sections */
 .sec { padding: 6rem 0; }
 .sec.alt { background: var(--band); }
-.sec.dark { background: linear-gradient(135deg, #030b1f, #0a2457); color: #e8f1ff; }
 .big { font-weight: 700; text-transform: uppercase; font-size: clamp(2.8rem, 7vw, 5rem); line-height: .95; margin-bottom: 3rem; }
 .item { display: grid; grid-template-columns: 180px 1fr; gap: 1rem 2rem; padding: 1.6rem 0; border-top: 1px solid var(--line); }
 .item:last-child { border-bottom: 1px solid var(--line); }
@@ -93,12 +92,13 @@ html:not([data-theme="dark"]) .social a:hover img { filter: brightness(0) invert
 .card-p .meta { color: var(--accent); font-weight: 800; margin-bottom: .6rem; }
 .card-p p { color: var(--body2); }
 .card-p a.lnk { display: inline-block; margin-right: .8rem; font-weight: 800; }
-.skill h3 { font-size: 1.5rem; font-weight: 700; text-transform: uppercase; color: #7cc4ff; }
+.skill h3 { font-size: 1.5rem; font-weight: 700; text-transform: uppercase; color: var(--accent); }
+.skill p { color: var(--body2); }
 .train { list-style: none; padding: 0; margin: 0; }
 .train li { padding: .5rem 0; border-bottom: 1px solid var(--line); color: var(--body2); }
 .train .y { color: var(--accent); font-weight: 800; margin-right: .6rem; }
 .contact a.mail { font-family: "Saira Extra Condensed", sans-serif; font-size: clamp(1.8rem, 6vw, 3rem); text-decoration: none; color: var(--accent); word-break: break-word; }
-footer { background: #020712; color: #8aa3c9; padding: 1.5rem 0; font-size: .9rem; text-align: center; }
+footer { background: var(--band); color: var(--muted); border-top: 1px solid var(--line); padding: 1.5rem 0; font-size: .9rem; text-align: center; }
 
 /* Smooth light/dark switch: the class is added by site.js only while toggling */
 html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after {
