@@ -222,6 +222,7 @@ exclude:
   - docker-compose.yml
   - docker-compose-slim.yml
   - docs/
+  - requirements.txt
   - Gemfile
   - Gemfile.lock
   - LICENSE
