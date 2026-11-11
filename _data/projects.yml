@@ -1,0 +1,27 @@
+- name: MALDIBANK
+  meta: INESC-ID / IST · 2026 – present
+  text: European Commission funded project combining MALDI-TOF mass spectrometry of microbes with machine learning, aimed at microbial identification and antibiotic resistance monitoring. I work on the bioinformatics side as a research fellow.
+
+- name: MaldiQC
+  meta: Developed within MALDIBANK
+  text: Quality control pipeline for MALDI-TOF mass spectrometry data.
+
+- name: FEGA Portugal
+  meta: BioData.pt / ELIXIR Portugal · 2025
+  text: Portuguese node of the Federated European Genome-phenome Archive. I worked as data steward for sensitive data, helpdesk officer and SOP writer, and co-authored the FEGA metadata technical report (EGA v2 model).
+  url: https://doi.org/10.5281/zenodo.19388370
+  link: Technical report (Zenodo)
+
+- name: PHENET soil ontologies
+  meta: ITQB NOVA · 2024 – 2025
+  text: Design and curation of soil ontologies to improve the semantic integration of environmental datasets.
+
+- name: Comparative demography of endangered species
+  meta: MSc thesis, IGC / FCUL · 2022 – 2024
+  text: Demographic history and population structure of mouse lemurs (Microcebus) inferred from genomic data, using PSMC and the SNIF structured non-stationary inference framework.
+  url: https://hdl.handle.net/10400.5/96800
+  link: Thesis (repository)
+
+- name: DARTpaths
+  meta: KU Leuven · 2021
+  text: In silico platform for investigating the molecular mechanisms of compounds, part of a project on in silico strategies to advance the 3Rs in toxicity testing. I added Drosophila melanogaster to the platform.

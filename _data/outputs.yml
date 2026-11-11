@@ -1,0 +1,26 @@
+- year: 2026
+  title: "FEGA Metadata Technical Report, EGA v2 model"
+  authors: FEGA Metadata Working Group (co-author)
+  venue: Zenodo, v1.0.1
+  url: https://doi.org/10.5281/zenodo.19388370
+  kind: Report
+
+- year: 2025
+  title: "Advancing FEGA Portugal"
+  authors: Oliveira JS, Cisneiros M, et al.
+  venue: F1000Research 14(ELIXIR):610
+  url: https://doi.org/10.7490/f1000research.1120225.1
+  kind: Poster
+
+- year: 2024
+  title: "Comparative demography of endangered species using genomic data"
+  authors: Cisneiros M
+  venue: MSc thesis, Faculty of Sciences, University of Lisbon
+  url: https://hdl.handle.net/10400.5/96800
+  kind: Thesis
+
+- year: 2023
+  title: "Comparative demography of endangered species using genomic data"
+  authors: Cisneiros M
+  venue: XIX ENBE, National Meeting of Evolutionary Biology, Lisbon
+  kind: Poster

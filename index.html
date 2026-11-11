@@ -1,0 +1,107 @@
+---
+layout: default
+---
+<header class="top">
+  {% if site.show_photo %}
+  <img class="photo" src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Miguel Cisneiros" width="120" height="120">
+  {% endif %}
+  <div>
+    <h1>Miguel Cisneiros</h1>
+    <p class="role">Bioinformatician · Research Fellow at INESC-ID / Instituto Superior Técnico, Universidade de Lisboa</p>
+    <p class="where">Machine Learning and Knowledge Discovery group · Lisbon, Portugal</p>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#outputs">Outputs</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main id="main">
+  <section id="about">
+    <h2>About</h2>
+    <p>I'm a bioinformatician and research fellow at INESC-ID, Instituto Superior Técnico (University of Lisbon), in the Machine Learning and Knowledge Discovery group, supervised by Prof. Ana Teresa Freitas. I work on <strong>MALDIBANK</strong>, a European Commission funded project that combines microbial mass spectrometry and AI, and I develop <strong>MaldiQC</strong>, a quality control pipeline for MALDI-TOF data.</p>
+    <p>Before that I worked in research data management at BioData.pt (ELIXIR Portugal), on FAIR data, metadata and sensitive-data governance in FEGA Portugal, and on soil ontologies in the PHENET project. My MSc, in evolutionary and developmental biology at the University of Lisbon, ended with a thesis on demographic inference in mouse lemurs at the Gulbenkian Science Institute.</p>
+    <p class="muted">Interests: AI for mass spectrometry, FAIR data and ontologies, evolutionary and population genomics.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      {% for e in site.data.experience %}
+      <li>
+        <span class="when">{{ e.dates }}</span>
+        <div>
+          <h3>{{ e.role }}</h3>
+          <p class="org">{{ e.org }}</p>
+          <p>{{ e.detail }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+      {% for p in site.data.projects %}
+      <article class="card">
+        <h3>{{ p.name }}</h3>
+        <p class="meta">{{ p.meta }}</p>
+        <p>{{ p.text }}</p>
+        {% if p.url %}<p><a href="{{ p.url }}">{{ p.link }}</a></p>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="outputs">
+    <h2>Outputs</h2>
+    <ul class="list">
+      {% for o in site.data.outputs %}
+      <li>
+        <span class="when">{{ o.year }}</span>
+        <div>
+          {% if o.url %}<a href="{{ o.url }}">{{ o.title }}</a>{% else %}{{ o.title }}{% endif %}
+          <p class="meta">{{ o.authors }} · {{ o.venue }} · {{ o.kind }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education and training</h2>
+    <ol class="timeline">
+      {% for e in site.data.education %}
+      <li>
+        <span class="when">{{ e.dates }}</span>
+        <div>
+          <h3>{{ e.title }}</h3>
+          <p class="org">{{ e.org }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+    <h3 class="sub">Courses and events</h3>
+    <ul class="list compact">
+      {% for t in site.data.training %}
+      <li><span class="when">{{ t.when }}</span><div>{{ t.text }}</div></li>
+      {% endfor %}
+    </ul>
+    <p class="muted">Skills: Python (NumPy, Pandas, Matplotlib, scikit-learn), Bash, git, R, SQL; FAIR data, metadata and ontologies, GDPR. Languages: Portuguese (native), English (C1), French (B1), Dutch (A1).</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul class="links">
+      {% for l in site.data.links %}
+      <li><a href="{{ l.url }}"{% unless l.url contains 'mailto:' %} rel="me noopener"{% endunless %}>{{ l.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>
