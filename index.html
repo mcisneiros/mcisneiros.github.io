@@ -57,7 +57,7 @@
 
         <section class="sec" id="about">
             <div class="container">
-                <h2 class="big rv"><small>Know</small>About me</h2>
+                <h2 class="big rv">About me</h2>
                 <div class="row">
                     <div class="col-lg-9 rv">
                         <p class="lead">I'm a bioinformatician and pre-doctoral research fellow in the Machine Learning and Knowledge Discovery group at INESC-ID, supervised by Prof. Ana Teresa Freitas. I work on MALDIBANK, a Horizon Europe project that applies machine learning to MALDI-TOF mass spectrometry for microbial identification and antibiotic resistance monitoring.</p>
@@ -69,7 +69,7 @@
 
         <section class="sec alt" id="experience">
             <div class="container">
-                <h2 class="big rv"><small>My</small>Experience</h2>
+                <h2 class="big rv">Experience</h2>
                 {% for e in site.data.experience %}
                 <div class="item rv">
                     <div class="when">{{ e.dates }}</div>
@@ -81,7 +81,7 @@
 
         <section class="sec" id="projects">
             <div class="container">
-                <h2 class="big rv"><small>My</small>Projects</h2>
+                <h2 class="big rv">Projects</h2>
                 <div class="row g-4">
                     {% for p in site.data.projects %}
                     <div class="col-md-6 rv">
@@ -99,7 +99,7 @@
 
         <section class="sec alt" id="outputs">
             <div class="container">
-                <h2 class="big rv"><small>My</small>Outputs</h2>
+                <h2 class="big rv">Outputs</h2>
                 {% for o in site.data.outputs %}
                 <div class="item rv">
                     <div class="when">{{ o.year }} · {{ o.kind }}</div>
@@ -115,7 +115,7 @@
 
         <section class="sec" id="education">
             <div class="container">
-                <h2 class="big rv"><small>My</small>Education</h2>
+                <h2 class="big rv">Education</h2>
                 {% for e in site.data.education %}
                 <div class="item rv">
                     <div class="when">{{ e.dates }}</div>
@@ -131,7 +131,7 @@
 
         <section class="sec dark" id="skills">
             <div class="container">
-                <h2 class="big rv"><small>My</small>Skills</h2>
+                <h2 class="big rv">Skills</h2>
                 <div class="row g-4">
                     <div class="col-md-4 skill rv"><h3>Programming and tools</h3><p>Python (NumPy, Pandas, Matplotlib, scikit-learn), Bash, git, R, SQL</p></div>
                     <div class="col-md-4 skill rv"><h3>Areas</h3><p>FAIR data, metadata and ontologies, GDPR, MALDI-TOF mass spectrometry, population genomics</p></div>
@@ -142,7 +142,7 @@
 
         <section class="sec text-center contact" id="contact">
             <div class="container">
-                <h2 class="big rv"><small>Get in</small>Touch</h2>
+                <h2 class="big rv">Contact</h2>
                 <a class="mail rv" href="mailto:mcisneiros@inesc-id.pt" style="color:var(--blue)">mcisneiros@inesc-id.pt</a>
                 <div class="social rv" style="--x:0">
                     {% for l in site.data.links %}<a href="{{ l.url }}" title="{{ l.label }}" aria-label="{{ l.label }}" style="background:var(--navy-2)"{% unless l.url contains 'mailto:' %} rel="me noopener"{% endunless %}>{% if l.img %}<img src="{{ l.img | relative_url }}" alt="" />{% else %}<i class="{{ l.icon }}"></i>{% endif %}</a>{% endfor %}
