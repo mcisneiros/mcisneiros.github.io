@@ -7,7 +7,7 @@ baseurl: ""
 lang: en
 
 # Optional: put a photo at assets/img/profile.jpg (square, under 300 KB) and set this to true.
-show_photo: false
+show_photo: true
 
 exclude:
   - Gemfile
