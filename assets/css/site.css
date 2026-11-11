@@ -18,13 +18,13 @@ html[data-theme="dark"] {
 }
 html { scroll-behavior: smooth; scroll-padding-top: 64px; }
 body { font-family: "Muli", system-ui, sans-serif; color: var(--ink); background: var(--bg); font-size: 1.05rem; transition: background .3s, color .3s; }
-h1, h2, h3, .display-font { font-family: "Saira Extra Condensed", sans-serif; }
+h1, h2, h3, .display-font { font-family: "League Spartan", system-ui, sans-serif; }
 a { color: var(--link); }
 
 /* Navbar: brand hidden at the top so the name is not repeated above the hero */
 .site-nav { background: transparent; transition: background .25s, box-shadow .25s; padding: .7rem 0; }
 .site-nav.scrolled, .site-nav.menu-open { background: var(--nav-bg); box-shadow: var(--nav-shadow); }
-.site-nav .navbar-brand { font-family: "League Spartan", "Saira Extra Condensed", sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: 0; color: var(--nav-fg); text-transform: none; opacity: 0; pointer-events: none; transition: opacity .25s; }
+.site-nav .navbar-brand { font-family: "League Spartan", system-ui, sans-serif; font-weight: 700; font-size: 1.35rem; letter-spacing: 0; color: var(--nav-fg); text-transform: none; opacity: 0; pointer-events: none; transition: opacity .25s; }
 .site-nav.scrolled .navbar-brand { opacity: 1; pointer-events: auto; }
 .site-nav .nav-link { color: var(--nav-fg); text-transform: uppercase; letter-spacing: .08em; font-size: .85rem; font-weight: 800; }
 .site-nav .nav-link { position: relative; transition: color .3s ease; }
@@ -61,7 +61,7 @@ html[data-theme="dark"] .hero-art-dark { opacity: 1; }
 .hero-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 26%; z-index: -1; background-color: var(--bg);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.12) 30%, rgba(0,0,0,.5) 62%, #000 100%); mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.12) 30%, rgba(0,0,0,.5) 62%, #000 100%); }
 .hero .avatar { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 6px solid var(--avatar-ring); box-shadow: 0 0 32px var(--avatar-glow); }
-.hero h1 { font-family: "League Spartan", "Saira Extra Condensed", sans-serif; font-weight: 700; font-size: clamp(2.6rem, 7.5vw, 5.6rem); letter-spacing: -.01em; text-transform: none; line-height: 1.05; margin: 1.4rem 0 .6rem; }
+.hero h1 { font-family: "League Spartan", system-ui, sans-serif; font-weight: 700; font-size: clamp(2.6rem, 7.5vw, 5.6rem); letter-spacing: -.01em; text-transform: none; line-height: 1.05; margin: 1.4rem 0 .6rem; }
 .hero h1 span { color: var(--hero-accent); }
 .hero .role { font-family: "League Spartan", sans-serif; font-weight: 600; font-size: clamp(1.2rem, 2.6vw, 1.8rem); letter-spacing: .01em; text-transform: none; color: var(--hero-fg); }
 .hero .where { color: var(--hero-sub); }
@@ -77,27 +77,27 @@ html:not([data-theme="dark"]) .social a:hover img { filter: brightness(0) invert
 /* Sections */
 .sec { padding: 6rem 0; }
 .sec.alt { background: var(--band); }
-.big { font-weight: 700; text-transform: uppercase; font-size: clamp(2.8rem, 7vw, 5rem); line-height: .95; margin-bottom: 3rem; }
+.big { font-weight: 700; text-transform: none; font-size: clamp(2.3rem, 5.5vw, 3.8rem); line-height: 1.05; letter-spacing: -.01em; margin-bottom: 2.5rem; }
 .item { display: grid; grid-template-columns: 180px 1fr; gap: 1rem 2rem; padding: 1.6rem 0; border-top: 1px solid var(--line); }
 .item:last-child { border-bottom: 1px solid var(--line); }
 .item .when { color: var(--accent); font-weight: 800; }
-.item h3 { font-size: 1.7rem; font-weight: 700; margin: 0; text-transform: uppercase; }
+.item h3 { font-size: 1.4rem; font-weight: 700; margin: 0; text-transform: none; line-height: 1.2; }
 .item h3 a { color: inherit; text-decoration: none; }
 .item h3 a:hover { color: var(--accent); }
 .item .org { color: var(--muted); font-weight: 800; margin-bottom: .4rem; }
 .item p { margin: 0; color: var(--body2); }
 @media (max-width: 767.98px) { .item { grid-template-columns: 1fr; } .sec { padding: 4rem 0; } }
 .card-p { background: var(--card); border: 1px solid var(--line); border-radius: .5rem; padding: 1.6rem; height: 100%; border-top: 4px solid var(--accent); }
-.card-p h3 { font-size: 1.7rem; font-weight: 700; text-transform: uppercase; margin: 0; }
+.card-p h3 { font-size: 1.4rem; font-weight: 700; text-transform: none; line-height: 1.2; margin: 0; }
 .card-p .meta { color: var(--accent); font-weight: 800; margin-bottom: .6rem; }
 .card-p p { color: var(--body2); }
 .card-p a.lnk { display: inline-block; margin-right: .8rem; font-weight: 800; }
-.skill h3 { font-size: 1.5rem; font-weight: 700; text-transform: uppercase; color: var(--accent); }
+.skill h3 { font-size: 1.25rem; font-weight: 700; text-transform: none; color: var(--accent); }
 .skill p { color: var(--body2); }
 .train { list-style: none; padding: 0; margin: 0; }
 .train li { padding: .5rem 0; border-bottom: 1px solid var(--line); color: var(--body2); }
 .train .y { color: var(--accent); font-weight: 800; margin-right: .6rem; }
-.contact a.mail { font-family: "Saira Extra Condensed", sans-serif; font-size: clamp(1.8rem, 6vw, 3rem); text-decoration: none; color: var(--accent); word-break: break-word; }
+.contact a.mail { font-family: "League Spartan", sans-serif; font-weight: 600; font-size: clamp(1.6rem, 5vw, 2.6rem); text-decoration: none; color: var(--accent); word-break: break-word; }
 footer { background: var(--band); color: var(--muted); border-top: 1px solid var(--line); padding: 1.5rem 0; font-size: .9rem; text-align: center; }
 
 /* Smooth light/dark switch: the class is added by site.js only while toggling */
