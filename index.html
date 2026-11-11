@@ -16,6 +16,7 @@
         <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧬%3C/text%3E%3C/svg%3E" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/js/all.min.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" rel="stylesheet" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
@@ -61,7 +62,7 @@
                     <p class="mb-5">I hold a BSc in Bioinformatics (Polytechnic of Setúbal) and an MSc in Evolutionary and Developmental Biology (University of Lisbon), with a thesis at the Gulbenkian Science Institute on the comparative demography of endangered species. Before INESC-ID I was a Data Steward and Bioinformatics Technician at BioData.pt (ELIXIR Portugal), working on FAIR data, GDPR and the FEGA Portugal node for sensitive data, and a research fellow on soil ontologies in the PHENET project at ITQB NOVA. I also did an Erasmus+ traineeship at KU Leuven on in silico alternatives to animal toxicity testing, and I am a Fulbright SUSI alumnus.</p>
                     <div class="social-icons">
                         {% for l in site.data.links %}
-                        <a class="social-icon" href="{{ l.url }}" title="{{ l.label }}" aria-label="{{ l.label }}"{% unless l.url contains 'mailto:' %} rel="me noopener"{% endunless %}><i class="{{ l.icon }}"></i></a>
+                        <a class="social-icon" href="{{ l.url }}" title="{{ l.label }}" aria-label="{{ l.label }}"{% unless l.url contains 'mailto:' %} rel="me noopener"{% endunless %}>{% if l.img %}<img src="{{ l.img | relative_url }}" alt="" />{% else %}<i class="{{ l.icon }}"></i>{% endif %}</a>
                         {% endfor %}
                     </div>
                 </div>
