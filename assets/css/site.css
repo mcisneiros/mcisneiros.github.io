@@ -2,7 +2,7 @@
 :root {
   --bg: #ffffff; --band: #f3f7ff; --ink: #14213d; --body2: #33425e; --muted: #5b6b86; --line: #dbe5f5; --card: #ffffff;
   --accent: #1d6fe0; --link: #1d6fe0;
-  --hero-img: url("../img/hero-light.svg"); --scrim: rgba(247,250,255,.78);
+  --hero-letters: url("../img/hero-letters-light.svg"); --hero-helix: url("../img/hero-helix-light.svg"); --scrim: rgba(255,255,255,.88); --hero-glow: rgba(120,175,255,.30); --hero-glow2: rgba(120,175,255,.14);
   --hero-fg: #0b1f4d; --hero-sub: #3a4f7a; --hero-accent: #1d6fe0; --avatar-ring: rgba(29,111,224,.35); --avatar-glow: rgba(29,111,224,.35);
   --nav-fg: #0b1f4d; --nav-bg: rgba(255,255,255,.96); --nav-shadow: 0 2px 14px rgba(20,33,61,.12);
   --icon-bg: rgba(29,111,224,.12); --icon-fg: #1d6fe0; --icon-hover-fg: #fff;
@@ -11,7 +11,7 @@
 html[data-theme="dark"] {
   --bg: #060f26; --band: #0a1a3d; --ink: #e8f1ff; --body2: #c7d7f2; --muted: #9db4d9; --line: #1b3060; --card: #0c1f4a;
   --accent: #7cc4ff; --link: #7cc4ff;
-  --hero-img: url("../img/hero-dark.svg"); --scrim: rgba(3,11,31,.6);
+  --hero-letters: url("../img/hero-letters-dark.svg"); --hero-helix: url("../img/hero-helix-dark.svg"); --scrim: rgba(6,15,38,.7); --hero-glow: rgba(30,100,220,.38); --hero-glow2: rgba(30,100,220,.22);
   --hero-fg: #ffffff; --hero-sub: #cfe3ff; --hero-accent: #7cc4ff; --avatar-ring: rgba(124,196,255,.4); --avatar-glow: rgba(29,111,224,.7);
   --nav-fg: rgba(255,255,255,.9); --nav-bg: rgba(3,11,31,.96); --nav-shadow: 0 2px 18px rgba(0,0,0,.4);
   --icon-bg: rgba(124,196,255,.16); --icon-fg: #ffffff; --icon-hover-fg: #fff;
@@ -38,11 +38,14 @@ html[data-theme="dark"] .theme-btn .fa-sun { display: inline-block; }
 html[data-theme="dark"] .theme-btn .fa-moon { display: none; }
 @media (max-width: 991.98px) { .site-nav.scrolled, .site-nav.menu-open { background: var(--nav-bg); } .site-nav .navbar-collapse { padding: .5rem 0 .8rem; } }
 
-/* Hero: image sits on a pseudo-element and fades into the page background */
-.hero { position: relative; isolation: isolate; min-height: 100vh; display: flex; align-items: center; text-align: center; color: var(--hero-fg); background: var(--bg); padding: 7rem 0 5rem; }
-.hero::before { content: ""; position: absolute; inset: 0; z-index: -2; background: var(--hero-img) 62% center / cover no-repeat;
+/* Hero: transparent letter + helix layers over a soft glow, faded into the page background */
+.hero { position: relative; isolation: isolate; min-height: 100vh; display: flex; align-items: center; text-align: center; color: var(--hero-fg); padding: 7rem 0 5rem;
+  background: radial-gradient(ellipse 55% 50% at 85% 30%, var(--hero-glow), transparent 100%), radial-gradient(ellipse 40% 45% at 6% 40%, var(--hero-glow2), transparent 100%), var(--bg); }
+.hero::before, .hero::after { content: ""; position: absolute; top: 0; bottom: 0; z-index: -2; background-repeat: no-repeat; background-size: auto 100%;
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, #000 55%, transparent 100%); }
-.hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse 60% 55% at 50% 52%, var(--scrim), transparent 75%); }
+.hero::before { left: 0; width: 62%; background-image: var(--hero-letters); background-position: left center; }
+.hero::after { right: 0; width: 68%; background-image: var(--hero-helix); background-position: right center; }
+.hero-scrim { position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse 48% 46% at 50% 54%, var(--scrim), transparent 100%); }
 .hero .avatar { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 6px solid var(--avatar-ring); box-shadow: 0 0 32px var(--avatar-glow); }
 .hero h1 { font-weight: 700; font-size: clamp(3rem, 9vw, 6.5rem); text-transform: uppercase; line-height: 1; margin: 1.4rem 0 .6rem; }
 .hero h1 span { color: var(--hero-accent); }
@@ -55,7 +58,7 @@ html[data-theme="dark"] .theme-btn .fa-moon { display: none; }
 html:not([data-theme="dark"]) .social img { filter: brightness(0) saturate(100%) invert(31%) sepia(95%) saturate(2200%) hue-rotate(205deg) brightness(95%); }
 html:not([data-theme="dark"]) .social a:hover img { filter: brightness(0) invert(1); }
 .scroll-hint { display: inline-block; margin-top: 2.5rem; color: var(--accent); font-size: 1.6rem; text-decoration: none; }
-@media (max-width: 575.98px) { .hero { padding-top: 6rem; } .hero .avatar { width: 140px; height: 140px; } .social a { width: 2.8rem; height: 2.8rem; font-size: 1.2rem; } .hero::before { background-position: 72% center; } }
+@media (max-width: 575.98px) { .hero { padding-top: 6rem; } .hero .avatar { width: 140px; height: 140px; } .social a { width: 2.8rem; height: 2.8rem; font-size: 1.2rem; } .hero::before, .hero::after { opacity: .6; width: 100%; } }
 
 /* Sections */
 .sec { padding: 6rem 0; }
