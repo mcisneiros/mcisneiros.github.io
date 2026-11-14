@@ -111,3 +111,7 @@ html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *
   transition: background-color .45s ease, color .45s ease, border-color .45s ease, box-shadow .45s ease, fill .45s ease, stroke .45s ease, opacity .45s ease !important; }
 
 @media (prefers-reduced-motion: reduce) { html.theme-anim, html.theme-anim *, html.theme-anim *::before, html.theme-anim *::after { transition: none !important; } html { scroll-behavior: auto; } }
+
+/* Institution logos: shown on a light tile so they read in both themes */
+.logos { display: flex; flex-wrap: wrap; gap: .6rem; margin: .2rem 0 .7rem; }
+.logos img { height: 36px; width: auto; max-width: 150px; object-fit: contain; background: #fff; border: 1px solid var(--line); border-radius: .5rem; padding: .35rem .6rem; }
