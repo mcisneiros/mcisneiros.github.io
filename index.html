@@ -92,7 +92,7 @@
                 {% for e in site.data.experience %}
                 <div class="item">
                     <div class="when">{{ e.dates }}</div>
-                    <div><h3>{{ e.role }}</h3><div class="org">{{ e.org }}</div><p>{{ e.detail }}</p></div>
+                    <div><h3>{{ e.role }}</h3><div class="org">{{ e.org }}</div>{% if e.logos %}<div class="logos">{% for l in e.logos %}<img src="{{ '/assets/img/logos/' | relative_url }}{{ l }}.svg" alt="" height="36" loading="lazy" onerror="this.remove()" />{% endfor %}</div>{% endif %}<p>{{ e.detail }}</p></div>
                 </div>
                 {% endfor %}
             </div>
@@ -138,7 +138,7 @@
                 {% for e in site.data.education %}
                 <div class="item">
                     <div class="when">{{ e.dates }}</div>
-                    <div><h3>{{ e.title }}</h3><div class="org">{{ e.org }}</div></div>
+                    <div><h3>{{ e.title }}</h3><div class="org">{{ e.org }}</div>{% if e.logos %}<div class="logos">{% for l in e.logos %}<img src="{{ '/assets/img/logos/' | relative_url }}{{ l }}.svg" alt="" height="36" loading="lazy" onerror="this.remove()" />{% endfor %}</div>{% endif %}</div>
                 </div>
                 {% endfor %}
                 <h3 class="mt-5 mb-3" style="font-size:1.4rem;font-weight:700">Courses and events</h3>

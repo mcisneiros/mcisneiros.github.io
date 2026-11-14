@@ -1,11 +1,14 @@
 - dates: 2026
   title: Advanced Training Diploma in Research Methodology and Techniques
   org: Instituto Superior Técnico
+  logos: [ist]
 
 - dates: 2021 – 2024
   title: MSc in Evolutionary and Developmental Biology
   org: Faculty of Sciences, University of Lisbon (FCUL) · final grade 16/20
+  logos: [fcul]
 
 - dates: 2018 – 2021
   title: BSc in Bioinformatics
   org: Barreiro School of Technology, Polytechnic of Setúbal · final grade 16/20
+  logos: [ips-etb]

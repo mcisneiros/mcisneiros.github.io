@@ -1,34 +1,41 @@
 - dates: Jan 2026 – present
   role: Research Fellow, MALDIBANK
   org: INESC-ID / Instituto Superior Técnico, Universidade de Lisboa
+  logos: [inesc-id, ist]
   detail: Machine Learning and Knowledge Discovery group, supervised by Prof. Ana Teresa Freitas. Bioinformatics on MALDIBANK, a European Commission funded project.
 
 - dates: Jun – Sep 2026
   role: Visiting researcher
   org: Guangzhou Medical University, China
+  logos: [guangzhou-medical-university]
   detail: China–Portugal Joint Laboratory on AI and Public Health Technologies (INESC-ID, Guangzhou Laboratory, Guangzhou Medical University, MUST). Evolutionary genomic signals for influenza forecasting; codon-level selection analysis of Nipah virus genomes.
 
 - dates: Mar – Dec 2025
   role: Collaborator, FEGA Portugal
   org: BioData.pt, ELIXIR Portugal
+  logos: [biodata-pt, elixir-portugal]
   detail: Data steward for sensitive data, helpdesk officer and SOP writing for the Portuguese node of the Federated European Genome-phenome Archive.
 
 - dates: Jul 2024 – Dec 2025
   role: Data Steward and Bioinformatics Technician
   org: BioData.pt, ELIXIR Portugal
+  logos: [biodata-pt, elixir-portugal]
   detail: FAIR principles and GDPR compliance, SOP development, metadata curation, data standards and technical writing.
 
 - dates: Jul 2024 – Mar 2025
   role: Research Fellow, PHENET
   org: ITQB NOVA
+  logos: [itqb-nova]
   detail: Design and curation of soil ontologies for the semantic integration of environmental datasets. Supervisor Inês Chaves.
 
 - dates: Nov 2022 – Nov 2024
   role: MSc thesis student
   org: Population and Conservation Genetics group, Gulbenkian Science Institute (IGC)
+  logos: [igc]
   detail: Comparative demography of endangered species using genomic data. Supervisors Lounès Chikhi and Margarida Matos.
 
 - dates: Feb – Jul 2021
   role: Curricular internship (Erasmus+)
   org: KU Leuven, Belgium
+  logos: [ku-leuven]
   detail: In silico strategies to advance the 3Rs in toxicity testing. Supervisors Vera van Noort and Diksha Bhalla.
