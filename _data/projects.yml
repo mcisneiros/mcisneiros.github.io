@@ -2,6 +2,12 @@
   meta: INESC-ID / IST · 2026 – present
   text: European Commission funded project combining MALDI-TOF mass spectrometry of microbes with machine learning, aimed at microbial identification and antibiotic resistance monitoring. I work on the bioinformatics side as a research fellow.
 
+- name: GLIM-BioData
+  meta: BioData.pt · Sep 2024 – Dec 2025 · Researcher
+  text: Gateway for Living Data Management (RI/00138/2024), a data management centre implementation grant from the Foundation for Science and Technology (€220k). The centre is meant to cement BioData.pt as a primary provider of national expertise in the management and valorisation of Portugal's life and health scientific data.
+  url: https://recuperarportugal.gov.pt/prr-resiliencia/capitalizacao-e-inovacao-empresarial/re-c05-i08-ciencia-mais-digital/
+  link: Funding programme page
+
 - name: FEGA Portugal
   meta: BioData.pt / ELIXIR Portugal · 2025
   text: Portuguese node of the Federated European Genome-phenome Archive. I worked as data steward for sensitive data, helpdesk officer and SOP writer, and co-authored the FEGA metadata technical report (EGA v2 model).
